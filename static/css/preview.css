@@ -27,8 +27,8 @@ body.upload {
     color: #fff;
     z-index: 10000;
     overflow: hidden;
-    height: 60px;
-    line-height: 60px;
+    height: 160px;
+    line-height: 30px;
     -webkit-transform: translateZ(0);
 }
 

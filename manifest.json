@@ -19,7 +19,7 @@
       "128": "icon128.png"
    },
    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
-   "web_accessible_resources": ["region.html"],
+   "web_accessible_resources": ["region.html", "settings.hmtl"],
    "manifest_version": 2,
    "permissions": [ "tabs", "<all_urls>", "storage","contextMenus"],
    "optional_permissions": [ "clipboardWrite" ]

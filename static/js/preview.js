@@ -38,12 +38,12 @@ $(function() {
                         fd = new FormData();
                         
                         fd.append('key', id);
-                        fd.append('acl', "public-read");
-                        fd.append('content-type', "image/png");
-                        fd.append('AWSAccessKeyId', res.key);
-                        fd.append('policy', res.policy);
-                        fd.append('signature', res.signature);
-                        fd.append('file', dataToBlob(getMerged()));
+                        //fd.append('acl', "public-read");
+                        //fd.append('content-type', "image/png");
+                        //fd.append('AWSAccessKeyId', res.key);
+                        //fd.append('policy', res.policy);
+                        //fd.append('signature', res.signature);
+                        //fd.append('file', dataToBlob(getMerged()));
                     
                     $('body').addClass('uploading');
                     
@@ -70,7 +70,7 @@ $(function() {
                         
                         // Store the last few shares
                         if(stored == false) {
-                            chrome.storage.sync.get('shares', function(res) {
+                            /*chrome.storage.sync.get('shares', function(res) {
                                 if(Array.isArray(res.shares)) {
                                     res.shares.unshift({id: id, time: (new Date()).getTime()});
                                     res.shares = res.shares.slice(0,3);
@@ -78,7 +78,8 @@ $(function() {
                                     res.shares = [{id: id, time: (new Date()).getTime()}];
                                 }
                                 chrome.storage.sync.set({shares: res.shares});
-                            });
+                            });*/
+
                             stored = true;
                         }
                         
@@ -86,7 +87,7 @@ $(function() {
                         setTimeout(function() {
                             $('#loading').hide();
                             $('#progress_bar').css('width', '0%');
-                            window.open('http://screenshot.co/' + id);
+                            //window.open('http://screenshot.co/' + id);
                             
                         }, 300);
                         
@@ -97,19 +98,19 @@ $(function() {
             $('#loading').fadeIn('fast');
             
             
-            if(policyCache) {
-                upload(policyCache);
+            //if(policyCache) {
+                upload();
                 return;
-            }
+            //}
             
-            $.get('http://s3policy.64px.com', function(res) {
+            /*$.get('http://s3policy.64px.com', function(res) {
                 policyCache = res;
                 upload(res);
                 
             }, 'json').error(function() {
                 $('#loading').hide();
                 $('#progress_bar').css('width', '0%');
-            });
+            });*/
         });
         
     }

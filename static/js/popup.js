@@ -1,5 +1,32 @@
 (function($) {
     var loaded = function() {
+        $('#settings').on('click', function() {
+                var div = document.createElement('div'),
+                src = chrome.extension.getURL('settings.html'),
+                clear = function() {
+                    var els = document.getElementsByClassName("SettingsFrameOverlay");
+                    for(var i = 0; i<els.length; i++) {
+                        document.body.removeChild(els[i]);
+                    }
+                }
+                
+                clear();
+                
+                div.innerHTML = '<iframe class="SettingsFrameOverlay" src="' + src + '"position: absolute;top: 50%;left: 50%;margin-top: -100px;margin-left: -100px;width: 200px;height: 200px;background-color: white; z-index: 2147483647; border: 0;" />';
+            
+                var iframe = div.childNodes[0];
+                
+                document.body.appendChild(iframe);
+                
+                var receiveMessage = function(message) {
+                    if(message && message.data == 'removeRegion') {
+                        clear();
+                    }
+                };
+
+                window.addEventListener("message", receiveMessage, false);
+        });
+
         $('#entire').on('click', function() {
             var images = [],
                 height,
