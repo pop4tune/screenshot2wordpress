@@ -19,7 +19,7 @@ $(function() {
                     mergeContext.drawImage(img, 0, 0);
                     mergeContext.drawImage(canvas[0], 0, 0);
                 
-                return mergeCanvas.toDataURL();
+                return mergeCanvas.toDataURL("image/png");
             }
             
         img.onload = function() {
@@ -34,10 +34,12 @@ $(function() {
         
         var policyCache,
             upload = function(res) {
-                    id = res.id,
                         fd = new FormData();
                         
-                        fd.append('key', id);
+                        fd.append('title', $("#title").val() ? $("#title").val():"New post");
+                        fd.append('body', $("#comment").val()  + "\n\n <img src='" + getMerged() + "'>");
+                        fd.append('user', localStorage.login );
+                        fd.append('password', localStorage.passwd );
                         //fd.append('acl', "public-read");
                         //fd.append('content-type', "image/png");
                         //fd.append('AWSAccessKeyId', res.key);
@@ -53,7 +55,7 @@ $(function() {
                     
                     $.ajax({
                         type: 'POST',
-                        url: 'http://s3.amazonaws.com/upload.screenshot.co',
+                        url: 'http://codingninjas.co/rpc/post2.php',
                         data: fd,
                         processData: false,
                         contentType: false,
@@ -67,21 +69,6 @@ $(function() {
                         }
                     }).done(function(data) {
                         $('body').removeClass('uploading');
-                        
-                        // Store the last few shares
-                        if(stored == false) {
-                            /*chrome.storage.sync.get('shares', function(res) {
-                                if(Array.isArray(res.shares)) {
-                                    res.shares.unshift({id: id, time: (new Date()).getTime()});
-                                    res.shares = res.shares.slice(0,3);
-                                } else {
-                                    res.shares = [{id: id, time: (new Date()).getTime()}];
-                                }
-                                chrome.storage.sync.set({shares: res.shares});
-                            });*/
-
-                            stored = true;
-                        }
                         
                         // On purpose lag to not flash the status bar
                         setTimeout(function() {

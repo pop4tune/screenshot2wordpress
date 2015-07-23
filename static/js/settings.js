@@ -1,5 +1,6 @@
 (function() {
-    
+    $('#login').val(localStorage['login']);
+
     $('#tooltip').on('click', function(e) {
         localStorage['login'] = $('#login').val();
         localStorage['passwd'] = $('#passwd').val();
