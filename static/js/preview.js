@@ -23,8 +23,8 @@ $(function() {
             }
             
         img.onload = function() {
-            if(this.width < window.innerWidth - 100) {
-                $(canvas).css({marginTop: 100});
+            if(this.width < window.innerWidth - 200) {
+                $(canvas).css({marginTop: 200});
             }
             canvas.attr({width: this.width, height: this.height}).css({backgroundImage: "url(" + ext.screenshot + ")"});
             canvas.appendTo(document.body);

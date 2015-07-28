@@ -1,0 +1,1787 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"show",
+				"showStatus"
+			],
+			[
+				"rou",
+				"route_name"
+			],
+			[
+				"user",
+				"users_list"
+			],
+			[
+				"ex",
+				"expected"
+			],
+			[
+				"group",
+				"groupname"
+			],
+			[
+				"non",
+				"nonContracts"
+			],
+			[
+				"skip",
+				"skipConfigs"
+			],
+			[
+				"for",
+				"forceReload"
+			],
+			[
+				"doc",
+				"docView"
+			],
+			[
+				"gett",
+				"getTSView"
+			],
+			[
+				"prevent",
+				"preventDefault"
+			],
+			[
+				"ro",
+				"route"
+			],
+			[
+				"new",
+				"newName"
+			],
+			[
+				"in",
+				"initExternalSources"
+			],
+			[
+				"exte",
+				"externalSources"
+			],
+			[
+				"add",
+				"added"
+			],
+			[
+				"sp",
+				"split"
+			],
+			[
+				"dia",
+				"dialogField"
+			],
+			[
+				"col",
+				"colDef"
+			],
+			[
+				"pars",
+				"parseInt"
+			],
+			[
+				"addfiel",
+				"addfields"
+			],
+			[
+				"grid",
+				"gridOptions"
+			],
+			[
+				"ed",
+				"editableCellTemplate"
+			],
+			[
+				"ini",
+				"initList"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"fie",
+				"fieldTypes"
+			],
+			[
+				"fiel",
+				"field_id"
+			],
+			[
+				"docs",
+				"docEvents"
+			],
+			[
+				"si",
+				"singleDoc"
+			],
+			[
+				"curre",
+				"currentTab"
+			],
+			[
+				"init",
+				"initSocket"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"us",
+				"userGroups"
+			],
+			[
+				"unde",
+				"undefined"
+			],
+			[
+				"logn",
+				"login_unsuccess"
+			],
+			[
+				"comm",
+				"communicate"
+			],
+			[
+				"nex",
+				"nextAssignee"
+			],
+			[
+				"all",
+				"allApproval"
+			],
+			[
+				"loca",
+				"location"
+			],
+			[
+				"fieldi",
+				"fieldIdsToAdd"
+			],
+			[
+				"lo",
+				"location"
+			],
+			[
+				"fil",
+				"filters_vars"
+			],
+			[
+				"resu",
+				"results"
+			],
+			[
+				"conten",
+				"contentIDs"
+			],
+			[
+				"fields",
+				"fieldsAsHash"
+			],
+			[
+				"open",
+				"openNodes"
+			],
+			[
+				"folde",
+				"foldersFiltered"
+			],
+			[
+				"ope",
+				"openKnown"
+			],
+			[
+				"re",
+				"readonly"
+			],
+			[
+				"js",
+				"JSON"
+			],
+			[
+				"par",
+				"parseInt"
+			],
+			[
+				"del",
+				"deltaChange"
+			],
+			[
+				"h",
+				"handleMenu"
+			],
+			[
+				"fold",
+				"foldersFiltered"
+			],
+			[
+				"data",
+				"dataManager"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"sear",
+				"searchSql"
+			],
+			[
+				"child",
+				"children"
+			],
+			[
+				"imp",
+				"important"
+			],
+			[
+				"da",
+				"dataManager"
+			],
+			[
+				"custom",
+				"custom_fields"
+			],
+			[
+				"has",
+				"hasChildren"
+			],
+			[
+				"_task",
+				"_taskdate"
+			],
+			[
+				"dash",
+				"dashboardGenerator"
+			],
+			[
+				"cus",
+				"customField"
+			],
+			[
+				"savec",
+				"saveChosenDir"
+			],
+			[
+				"save",
+				"saveCustomFields"
+			],
+			[
+				"change",
+				"changedColumn"
+			],
+			[
+				"proces",
+				"processData"
+			],
+			[
+				"sho",
+				"show_ajaxloader"
+			],
+			[
+				"load",
+				"loadFilesByFolder"
+			],
+			[
+				"glo",
+				"globalFieldTypes"
+			],
+			[
+				"chi",
+				"children"
+			],
+			[
+				"fol",
+				"folder"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"bre",
+				"breadcrumbs"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"prett",
+				"prettyJSON"
+			],
+			[
+				"sup",
+				"supportEmail"
+			],
+			[
+				"con",
+				"controllers"
+			],
+			[
+				"ori",
+				"original"
+			],
+			[
+				"res",
+				"resArray"
+			],
+			[
+				"docUp",
+				"docUpdateSize"
+			],
+			[
+				"even",
+				"eventField"
+			],
+			[
+				"ass",
+				"assignee"
+			],
+			[
+				"assig",
+				"assignees"
+			],
+			[
+				"rep",
+				"reprocess"
+			],
+			[
+				"su",
+				"supportEmail"
+			],
+			[
+				"cur",
+				"curr_src"
+			],
+			[
+				"ch",
+				"childDoc"
+			],
+			[
+				"resul",
+				"result_type"
+			],
+			[
+				"menu",
+				"menuOptions"
+			],
+			[
+				"ma",
+				"majorField"
+			],
+			[
+				"view",
+				"viewMode"
+			],
+			[
+				"cal",
+				"callbacksCount"
+			],
+			[
+				"modal",
+				"modalInstance"
+			],
+			[
+				"callb",
+				"callback"
+			],
+			[
+				"isNo",
+				"isNotValue"
+			],
+			[
+				"em",
+				"emptyNode"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"value",
+				"valueFieldName"
+			],
+			[
+				"valu",
+				"valueFieldName"
+			],
+			[
+				"gener",
+				"generatedSQL"
+			],
+			[
+				"valid",
+				"validationFunction"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"filte",
+				"filtersManager"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"to",
+				"toJSON"
+			],
+			[
+				"paren",
+				"parent_id"
+			],
+			[
+				"template",
+				"templateName"
+			],
+			[
+				"templa",
+				"templateName"
+			],
+			[
+				"callba",
+				"callbacksCount"
+			],
+			[
+				"bread",
+				"breadcrumbs"
+			],
+			[
+				"so",
+				"sourceOfSave"
+			],
+			[
+				"sour",
+				"source_of_save"
+			],
+			[
+				"pas",
+				"passwordHelper"
+			],
+			[
+				"temp",
+				"template"
+			],
+			[
+				"old",
+				"oldUploadTemplate"
+			],
+			[
+				"bef",
+				"beforeTypes"
+			],
+			[
+				"orig",
+				"originalTypes"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"onl",
+				"onlyIfChanged"
+			],
+			[
+				"acti",
+				"actionForAudit"
+			],
+			[
+				"_obj",
+				"_objNew"
+			],
+			[
+				"sing",
+				"singleTask"
+			],
+			[
+				"ge",
+				"generateDiff"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Searching 39 files for \"64px\"\n\n/Users/akve/work/volodarik/ext/static/js/network.js:\n    4      \n    5      var displayName = app.name.replace(/[^a-z0-9\\s]/gi, '').replace(/\\s{2,}/g, ' ').replace(/\\s/g, '-')\n    6:         url = 'http://64px.com/' + encodeURIComponent(displayName).toLowerCase() + '/' + app.id + '/install';\n    7      \n    8      window.open(url);\n\n/Users/akve/work/volodarik/ext/static/js/preview.js:\n  103              }\n  104              \n  105:             $.get('http://s3policy.64px.com', function(res) {\n  106                  policyCache = res;\n  107                  upload(res);\n\n2 matches across 2 files\n\n\nSearching 41 files for \"region.html\"\n\n/Users/akve/work/volodarik/ext/manifest.json:\n   20     },\n   21     \"content_security_policy\": \"script-src 'self' https://ssl.google-analytics.com; object-src 'self'\",\n   22:    \"web_accessible_resources\": [\"region.html\"],\n   23     \"manifest_version\": 2,\n   24     \"permissions\": [ \"tabs\", \"<all_urls>\", \"storage\",\"contextMenus\"],\n\n/Users/akve/work/volodarik/ext/static/js/region.inject.js:\n    1  (function() {\n    2      var div = document.createElement('div'),\n    3:         src = chrome.extension.getURL('region.html'),\n    4          clear = function() {\n    5              var els = document.getElementsByClassName(\"ScreenshotInjectFrameOverlay\");\n\n2 matches across 2 files\n\n\nSearching 41 files for \"tooltip\"\n\n/Users/akve/work/volodarik/ext/region.html:\n    8          <img id=\"blank\" src=\"static/img/trans.gif\" />\n    9          <div id=\"buttons\">\n   10:             <button id=\"tooltip\">TAKE SCREENSHOT</button><button id=\"cancel\">X</button>\n   11          </div>\n   12          <script type=\"text/javascript\" src=\"static/js/jquery.js\"></script>\n\n/Users/akve/work/volodarik/ext/settings.html:\n    6          <img id=\"blank\" src=\"static/img/trans.gif\" />\n    7          <div id=\"buttons\">\n    8:             <button id=\"tooltip\">Save</button><button id=\"cancel\">Cancel</button>\n    9          </div>\n   10          <script type=\"text/javascript\" src=\"static/js/jquery.js\"></script>\n\n/Users/akve/work/volodarik/ext/static/js/region.js:\n   23      });\n   24      \n   25:     $('#tooltip').on('click', function(e) {\n   26          $('body').empty();\n   27          setTimeout(function() {\n\n3 matches across 3 files\n\n\nSearching 45 files for \"tooltip\"\n\n/Users/akve/work/volodarik/ext/region.html:\n    8          <img id=\"blank\" src=\"static/img/trans.gif\" />\n    9          <div id=\"buttons\">\n   10:             <button id=\"tooltip\">TAKE SCREENSHOT</button><button id=\"cancel\">X</button>\n   11          </div>\n   12          <script type=\"text/javascript\" src=\"static/js/jquery.js\"></script>\n\n/Users/akve/work/volodarik/ext/settings.html:\n   10          	Password: <br>\n   11          	<input type=\"password\" id=\"passwd\"><br>\n   12:             <button id=\"tooltip\">Save</button><button id=\"cancel\">Cancel</button>\n   13          </div>\n   14          <script type=\"text/javascript\" src=\"static/js/jquery.js\"></script>\n\n/Users/akve/work/volodarik/ext/static/js/region.js:\n   23      });\n   24      \n   25:     $('#tooltip').on('click', function(e) {\n   26          $('body').empty();\n   27          setTimeout(function() {\n\n/Users/akve/work/volodarik/ext/static/js/settings.js:\n    1  (function() {\n    2      \n    3:     $('#tooltip').on('click', function(e) {\n    4          localStorage['login'] = $('#login').val();\n    5          localStorage['passwd'] = $('#passwd').val();\n\n4 matches across 4 files\n\n\nSearching 45 files for \"localstorage\"\n\n/Users/akve/work/volodarik/ext/static/js/network.js:\n    1  (function(app, didRun) {\n    2      if(didRun) { return; }\n    3:     localStorage._networkOnce = '1';\n    4      \n    5      var displayName = app.name.replace(/[^a-z0-9\\s]/gi, '').replace(/\\s{2,}/g, ' ').replace(/\\s/g, '-')\n    .\n    7      \n    8  //    window.open(url);\n    9: })(chrome.app.getDetails(), localStorage._networkOnce);\n\n/Users/akve/work/volodarik/ext/static/js/settings.js:\n    1  (function() {\n    2:     alert(localStorage)\n    3:     $('#login').val(localStorage['login']);\n    4  \n    5      $('#tooltip').on('click', function(e) {\n    6:         localStorage['login'] = $('#login').val();\n    7:         localStorage['passwd'] = $('#passwd').val();\n    8          $('body').empty();\n    9          setTimeout(function() {\n\n6 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 4356,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "region.js",
+			"settings":
+			{
+				"buffer_size": 1171,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "settings.js",
+			"settings":
+			{
+				"buffer_size": 452,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "region.inject.js",
+			"settings":
+			{
+				"buffer_size": 970,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/akve/work/volodarik/ext/manifest.json",
+			"settings":
+			{
+				"buffer_size": 847,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "network.js",
+			"settings":
+			{
+				"buffer_size": 392,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "preview.js",
+			"settings":
+			{
+				"buffer_size": 6144,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/akve/work/volodarik/ext/popup.html",
+			"settings":
+			{
+				"buffer_size": 1200,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "popup.js",
+			"settings":
+			{
+				"buffer_size": 4223,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Users/akve/work/volodarik/ext/settings.html",
+			"settings":
+			{
+				"buffer_size": 637,
+				"line_ending": "Unix",
+				"name": "settings"
+			}
+		},
+		{
+			"file": "/Users/akve/work/volodarik/ext/preview.html",
+			"settings":
+			{
+				"buffer_size": 3058,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/akve/work/volodarik/ext/post2.php",
+			"settings":
+			{
+				"buffer_size": 1629,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 287.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/akve/work/volodarik/ext/static/css/preview.css",
+		"/Users/akve/work/volodarik/ext/ixr.php",
+		"/Users/akve/work/volodarik/ext/post2.php",
+		"/Users/akve/work/volodarik/ext/post.php",
+		"/Users/akve/work/volodarik/ext/static/settings.html",
+		"/Users/akve/Downloads/ext1/extension_1_1/extension_1_1/preview.html",
+		"/Users/akve/Downloads/ext1/extension_1_1/extension_1_1/popup.html",
+		"/Users/akve/downloads/ext1/extension_1_1/extension_1_1/static/js/preview.js",
+		"/Users/akve/work/uvision/oscm3/app/css/combined.css",
+		"/Users/akve/work/uvision/oscm3/app/css/ui-grid.css",
+		"/Users/akve/work/uvision/oscm3/app/bower_components/bg-splitter/css/style.css",
+		"/Users/akve/work/uvision/oscm3/app/Gruntfile.js",
+		"/Users/akve/work/uvision/oscm3/app/index.min.html",
+		"/Users/akve/work/uvision/oscm3/app/index.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/controllers/folders_additional.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/controllers/folders_controller.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/controllers/contracts_controller.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/app.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/models/folders_model.js",
+		"/Users/akve/work/uvision/oscm3/app/core/helpers.js",
+		"/Users/akve/work/uvision/oscm3/nodejs/middleware/doc/index.js",
+		"/Users/akve/work/uvision/oscm3/nodejs/files/5105.original",
+		"/Users/akve/work/uvision/oscm3/nodejs/middleware/search/index.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/directives/selector_select.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/smart_search/controls/select.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/smart_search/controls/checkbox.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/smart_search/controls/text.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/smart_search/controls/number.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/smart_search/controls/multi_checkbox.html",
+		"/Users/akve/work/uvision/oscm3/infra/db_migration/11.sql",
+		"/Users/akve/work/uvision/oscm3/nodejs/plugins/acl.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/controllers/admin_controller.js",
+		"/Users/akve/work/uvision/oscm3/nodejs/config/global.json",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/smart_search/filters.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/controllers/tss_controller.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/smart_search/controls/event.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/lightboxes/acl_manager.html",
+		"/Users/akve/work/uvision/oscm3/nodejs/node_modules/password_helper.js",
+		"/Users/akve/work/uvision/oscm3/infra/db_migration/10.sql",
+		"/Users/akve/work/uvision/oscm3/nodejs/manual_upload.js",
+		"/Users/akve/work/uvision/oscm3/nodejs/upload.sh",
+		"/Users/akve/work/uvision/oscm3/nodejs/node_modules/oscm-controllers.js",
+		"/Users/akve/work/uvision/oscm3/infra/pgdump.sh",
+		"/Users/akve/work/uvision/oscm3/nodejs/emailtemplates/jade/user-wrong-password/html.jade",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/main/mini_tree_old.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/lightboxes/select_location_old.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/lightboxes/select_location.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/controllers/upload_controller.js",
+		"/Users/akve/work/uvision/oscm3/nodejs/middleware/user/index.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/lightboxes/admin_configure_general.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/admin/main.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/tree_bak.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/lightboxes/admin_import_csv.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/models/users_model.js",
+		"/Users/akve/work/uvision/oscm3/nodejs/node_modules/dashboard-generator.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/main.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/main/header.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/controllers/metadata_controller.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/controllers/dashboard_controller.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/dashboard/main.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/lightboxes/metadata_list.html",
+		"/Users/akve/work/uvision/oscm3/infra/tenant.sh",
+		"/Users/akve/work/uvision/oscm3/app/mvc/app_config.js",
+		"/Users/akve/work/uvision/oscm3/nodejs/app.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/controllers/header_controller.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/controllers/folders_old_controller.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/controllers/folders_additional_old.js",
+		"/Users/akve/work/uvision/oscm3/app/core/angular-ui-grid.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/tree.html",
+		"/Users/akve/work/uvision/oscm3/infra/bigdata.json",
+		"/Users/akve/work/uvision/oscm3/app/mvc/models/contracts_model.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/contracts/approvals.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/contracts/main.html",
+		"/Users/akve/work/uvision/oscm3/app/core/fullcalendar.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/lightboxes/calendar_externals.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/calendar/main.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/controllers/calendar_controller.js",
+		"/Users/akve/work/uvision/oscm3/infra/migration_combined.sql",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/editors/multi.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/files.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/directives/dp.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/directives/contracts.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/lightboxes/inline_folder_editor.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/editors/plain.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/editors/date.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/filters/os_filters.js",
+		"/Users/akve/work/uvision/oscm3/app/core/polyfiller.js",
+		"/Users/akve/work/uvision/oscm3/app/core/shims/form-validation.js",
+		"/Users/akve/work/uvision/oscm3/app/core/shims/styles/shim-ext.css",
+		"/Users/akve/work/uvision/oscm3/app/core/shims/combos/5.js",
+		"/Users/akve/work/uvision/oscm3/app/core/shims/combos/3.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/editor.html",
+		"/Users/akve/work/uvision/oscm3/nodejs/node_modules/socket-helper.js",
+		"/Users/akve/work/uvision/oscm3/app/css/tree.css",
+		"/Users/akve/work/uvision/oscm3/nodejs/middleware/batch/index.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/contracts/contract_information.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/_trash_item.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/acceptance_certificate.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/amendment.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/change_request.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/contract.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/custom_contract.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/exhibit.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/folder.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/new_version.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/sow.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/trash_folder.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/main/mini_tree.html",
+		"/Users/akve/work/uvision/oscm3/app/css/mystyle.css",
+		"/Users/akve/work/uvision/oscm3/app/css/contracts.css",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/smart_search/results_rows_detailed.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/smart_search/results_rows_content.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/smart_search/results_rows.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/smart_search/results.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/controllers/errors_controller.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/models/search_model.js",
+		"/Users/akve/Documents/onthego",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/lightboxes/admin_new_role.html",
+		"/Users/akve/work/uvision/oscm3/app/bower_components/bg-splitter/js/splitter.js",
+		"/Users/akve/work/uvision/oscm3/nodejs/node_modules/migration-controller.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/lightboxes/admin_new_template.html",
+		"/Users/akve/work/uvision/oscm3/app/mvc/controllers_combined.js",
+		"/Users/akve/work/uvision/oscm3/app/temp/lang.json",
+		"/Users/akve/work/uvision/oscm3/nodejs/node_modules/box-sdk/lib/connector.js",
+		"/Users/akve/work/uvision/oscm3/nodejs/node_modules/email-controller.js",
+		"/Users/akve/work/uvision/oscm3/nodejs/node_modules/passport/lib/middleware/authenticate.js",
+		"/Users/akve/work/uvision/oscm3/app/mvc/views/lightboxes/admin_new_user.html",
+		"/Users/akve/work/uvision/oscm3/nodejs/emailtemplates/jade/user-wrong-password/subject.jade"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/akve/work/volodarik/ext",
+			"/Users/akve/downloads/ext1",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/nodejs/emailtemplates",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/infra",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app/",
+			"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types",
+			"/Users/akve/work/uvision/oscm3/nodejs/helpers",
+			"/Users/akve/work/uvision/oscm3/nodejs/middleware",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/app/css",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/app/*.html",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs/node_modules/passport",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs/middleware",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/infra",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/app/core/integral",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/infra",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/infra",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/app/css",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/infra",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/infra",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/infra",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/infra",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/infra",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/infra",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3",
+			"/Users/akve/work/uvision/oscm3/nodejs",
+			"/Users/akve/work/uvision/oscm3/app",
+			"/Users/akve/work/uvision/oscm3"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"getMerged",
+			"dataToBlob",
+			"localstorage",
+			"tooltip",
+			"excerpt",
+			"$author_id",
+			"tooltip",
+			"region.html",
+			"64px",
+			"policyCache",
+			"upload",
+			"_metadata",
+			"addIdToOpenedDirs",
+			"saveOpenDirs",
+			"defa",
+			"acl_modal",
+			"acl_",
+			">>>",
+			"alerts",
+			"alerts=",
+			"alerts =",
+			"alerts :",
+			"alerts:",
+			"messages.",
+			"reprocess",
+			"/reprocess",
+			"reprocess",
+			"selectorSelect",
+			"selector-select",
+			"unselected",
+			"genSearchFilter",
+			"readData",
+			"HEY",
+			"users_list",
+			"acl_modal",
+			"acl_manager",
+			"Select User, Group or Role",
+			"All tasks completed",
+			"allowe",
+			"changeFilterState",
+			"changefilterstate",
+			"anyInList",
+			"ids",
+			"docs.id in",
+			"as fields from docs where docs.id in",
+			"postDocRec",
+			"fillSystemFieldsOnUpload",
+			"fill",
+			"fillSystemFieldsOnUpload",
+			"console.",
+			"processDoc",
+			"postDocRec",
+			"getIP",
+			"user-wrong-password",
+			"committed_date",
+			"<table",
+			"$rootScope.docTemplates",
+			"$scope.allFields",
+			"fileNameLable",
+			"Select file ID field in database",
+			"original",
+			"allFields",
+			"resolve:",
+			"select_location.html",
+			"upload_select_location_modal",
+			"Select_location_modal",
+			"resolve:",
+			"location",
+			"currenc",
+			"generalmo",
+			"genera",
+			"$genera",
+			"general",
+			"$window.",
+			"adminConfigureCurrenciesCtrl",
+			"datama",
+			"data",
+			"\"PUSHING\"",
+			"getAccount",
+			"get_acc",
+			"get_doc",
+			".init(",
+			"initsoc",
+			"onreadystatechange",
+			"groupContainsUser",
+			"merge",
+			"issub",
+			"issu",
+			"is_sub",
+			"groupContainsUser",
+			"rowTemplate",
+			"masterInit",
+			".on",
+			"get_login",
+			"login",
+			"init",
+			"model.init(",
+			".init(",
+			"init",
+			"Tree_controller",
+			"\"send",
+			"processAllFields",
+			"metadataAddField",
+			"metadata_list",
+			"Select from existing",
+			"send",
+			"Send",
+			"migra",
+			"total",
+			"totalcn",
+			"stats",
+			"events.all",
+			"events",
+			"appro",
+			"orderBy",
+			"dashboard",
+			"dash_manager",
+			"initso",
+			"normalizeWheelEvent",
+			"refresh",
+			"$scope.refresh",
+			"model.in",
+			"get_doc",
+			"initTabsTemplates",
+			"saveView",
+			"getFolders",
+			"saveTemplate",
+			"addProperties"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"',",
+			"'",
+			" t-icon",
+			"",
+			"'%agreement%'",
+			"",
+			"core/integral",
+			"'",
+			"",
+			"_.clone",
+			"_.copy",
+			"_.clone",
+			"_mng",
+			"exports",
+			";\\n",
+			"; insert into docs",
+			");^",
+			"data-collapsed=\"true\"",
+			"current.detailFields",
+			"current.result_type",
+			"current.view_mode",
+			"current.phrase",
+			"current.filters_vars",
+			"doc.data",
+			"",
+			"-icon",
+			"",
+			"timeManager",
+			"objectFitsInCurrentScope",
+			"<label class=\"label-extended\"",
+			"",
+			"\";",
+			"txt += \"",
+			" ",
+			"txt += \"",
+			" ",
+			"scope",
+			"",
+			"size-thumbnail rounded-image",
+			"18px",
+			"name",
+			"code",
+			"testtest",
+			"images",
+			"emailTemplates",
+			"code",
+			"580",
+			"Tip",
+			"tip",
+			"Tip",
+			"tip",
+			"tio",
+			"tips",
+			"EditTipItemView",
+			"scrollManager",
+			"gloosaryCol"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 4356,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										236,
+										240
+									],
+									[
+										502,
+										506
+									],
+									[
+										882,
+										893
+									],
+									[
+										1185,
+										1196
+									],
+									[
+										1562,
+										1569
+									],
+									[
+										1903,
+										1910
+									],
+									[
+										2160,
+										2167
+									],
+									[
+										2501,
+										2508
+									],
+									[
+										2834,
+										2841
+									],
+									[
+										3091,
+										3098
+									],
+									[
+										3303,
+										3310
+									],
+									[
+										3654,
+										3666
+									],
+									[
+										3894,
+										3906
+									],
+									[
+										4015,
+										4027
+									],
+									[
+										4056,
+										4068
+									],
+									[
+										4154,
+										4166
+									],
+									[
+										4212,
+										4224
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								4058,
+								4058
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 5,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1485.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "region.js",
+					"settings":
+					{
+						"buffer_size": 1171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								777,
+								777
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "settings.js",
+					"settings":
+					{
+						"buffer_size": 452,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								446,
+								446
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "region.inject.js",
+					"settings":
+					{
+						"buffer_size": 970,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								676,
+								676
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/akve/work/volodarik/ext/manifest.json",
+					"settings":
+					{
+						"buffer_size": 847,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								727,
+								727
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "network.js",
+					"settings":
+					{
+						"buffer_size": 392,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								56,
+								68
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "preview.js",
+					"settings":
+					{
+						"buffer_size": 6144,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1105,
+								1105
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/akve/work/volodarik/ext/popup.html",
+					"settings":
+					{
+						"buffer_size": 1200,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1019,
+								1027
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "popup.js",
+					"settings":
+					{
+						"buffer_size": 4223,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1132,
+								1132
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/akve/work/volodarik/ext/settings.html",
+					"settings":
+					{
+						"buffer_size": 637,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								603,
+								603
+							]
+						],
+						"settings":
+						{
+							"auto_name": "settings",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/Users/akve/work/volodarik/ext/preview.html",
+					"settings":
+					{
+						"buffer_size": 3058,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1281,
+								1288
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 159.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/Users/akve/work/volodarik/ext/post2.php",
+					"settings":
+					{
+						"buffer_size": 1629,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								492,
+								492
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"glo",
+				"nodejs/config/global.json"
+			],
+			[
+				"5105",
+				"nodejs/files/5105.original"
+			],
+			[
+				"folders_con",
+				"app/mvc/controllers/folders_controller.js"
+			],
+			[
+				"contrac",
+				"app/mvc/controllers/contracts_controller.js"
+			],
+			[
+				"admin",
+				"app/mvc/controllers/admin_controller.js"
+			],
+			[
+				"global",
+				"nodejs/config/global.json"
+			],
+			[
+				"app.",
+				"app/mvc/app.js"
+			],
+			[
+				"glob",
+				"nodejs/config/global.json"
+			],
+			[
+				"head",
+				"app/mvc/controllers/header_controller.js"
+			],
+			[
+				"folder",
+				"app/mvc/models/folders_model.js"
+			],
+			[
+				"fol",
+				"app/mvc/models/folders_model.js"
+			],
+			[
+				"tena",
+				"infra/tenant.sh"
+			],
+			[
+				"app",
+				"app/mvc/app_config.js"
+			],
+			[
+				"folders_mo",
+				"app/mvc/models/folders_model.js"
+			],
+			[
+				"app_co",
+				"app/mvc/app_config.js"
+			],
+			[
+				"tree.c",
+				"app/css/tree.css"
+			],
+			[
+				"grun",
+				"app/Gruntfile.js"
+			],
+			[
+				"tree.",
+				"app/css/tree.css"
+			],
+			[
+				"fold",
+				"app/mvc/controllers/folders_controller.js"
+			],
+			[
+				"grid.js",
+				"app/core/angular-ui-grid.js"
+			],
+			[
+				"spli",
+				"app/bower_components/bg-splitter/js/splitter.js"
+			],
+			[
+				"bat",
+				"infra/batch_mailer_cron.sh"
+			],
+			[
+				"contra",
+				"app/mvc/controllers/contracts_controller.js"
+			],
+			[
+				"mys",
+				"app/css/mystyle.css"
+			],
+			[
+				"index.js",
+				"nodejs/middleware/doc/index.js"
+			],
+			[
+				"curren",
+				"app/temp/currencies.js"
+			],
+			[
+				"folders",
+				"app/mvc/models/folders_model.js"
+			],
+			[
+				"pass",
+				"nodejs/node_modules/password_helper.js"
+			],
+			[
+				"dash",
+				"nodejs/node_modules/dashboard-generator.js"
+			],
+			[
+				"header",
+				"app/mvc/controllers/header_controller.js"
+			],
+			[
+				"foldersmo",
+				"app/mvc/models/folders_model.js"
+			],
+			[
+				"acl.",
+				"nodejs/plugins/acl.js"
+			],
+			[
+				"globa",
+				"nodejs/config/global.json"
+			],
+			[
+				"das",
+				"app/mvc/controllers/dashboard_controller.js"
+			],
+			[
+				"tenan",
+				"infra/tenant.sh"
+			],
+			[
+				"tree_b",
+				"app/mvc/views/folders/tree_bak.html"
+			],
+			[
+				"tree.h",
+				"app/mvc/views/folders/tree.html"
+			],
+			[
+				"1353",
+				"nodejs/files/1353.original"
+			],
+			[
+				"osc",
+				"nodejs/node_modules/oscm-controllers.js"
+			],
+			[
+				"liabi",
+				"qe-toolkit/public/js/views/liabilitiesViews.js"
+			],
+			[
+				"layo",
+				"qe-toolkit/public/assets/layout.css"
+			],
+			[
+				"conta",
+				"qe-toolkit/public/js/models/contact.js"
+			],
+			[
+				"inde",
+				"public/admin/index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 270.0,
+	"status_bar_visible": true
+}

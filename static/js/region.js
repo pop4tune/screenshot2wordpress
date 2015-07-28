@@ -19,7 +19,8 @@
         },
         instance: true,
         keys: true,
-        persistent: true
+        persistent: true,
+        parent: 'body'
     });
     
     $('#tooltip').on('click', function(e) {
