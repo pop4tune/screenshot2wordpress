@@ -21,6 +21,6 @@
    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
    "web_accessible_resources": ["region.html", "settings.hmtl"],
    "manifest_version": 2,
-   "permissions": [ "tabs", "<all_urls>", "storage","contextMenus"],
+   "permissions": [ "tabs", "<all_urls>", "storage","contextMenus", "nativeMessaging"],
    "optional_permissions": [ "clipboardWrite" ]
 }

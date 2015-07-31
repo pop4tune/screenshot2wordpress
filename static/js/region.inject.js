@@ -17,6 +17,7 @@
     document.body.appendChild(iframe);
     
     var receiveMessage = function(message) {
+        console.log("gotcha", message);
         if(message && message.data == 'removeRegion') {
             clear();
         }

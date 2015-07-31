@@ -1,0 +1,234 @@
+<html>
+<head>
+<title>CodeNinjas Options</title>
+<script src="scripts/3p/jquery-2.1.1.min.js"></script>
+<script src="scripts/fsUtils.js"></script>
+<script src="scripts/fsOptions.js"></script>
+<style>
+body {
+    font-size: 14px;
+    font-family: arial, sans-serif;
+	background:#f5f5f5;
+	padding: 20px;
+  }
+
+h1 {font-size: 30px; font-family: Arial, sans-serif; font-weight: normal;}
+
+h2 {font-size: 14px; margin:0}
+
+table {font-size: 14px;}
+  
+#tblMain td {
+	padding: 20px 10px 20px 10px;
+	border-top: #dddddd solid 1px;
+	vertical-align:top; 
+}
+
+#tblTemplate {margin-left:30px}
+
+#tblTemplate td {
+	padding: 0px 10px 15px 10px;
+	border: none;
+	vertical-align:top; 
+	font-size:12px;
+}
+
+#tblHotkeys td {border: none; vertical-align:middle; padding: 0px 10px 15px 10px;}
+
+#logo {vertical-align:middle; margin-right:15px}
+
+
+button {padding: 5px}
+
+.link-button {
+-webkit-box-shadow: none;
+background: transparent none;
+border: none;
+color: rgb(17, 85, 204);
+cursor: pointer;
+font: inherit;
+margin: 0;
+padding: 0 4px;
+}
+
+#divTemplateSettings {display:none;}
+
+#container {display:none;}
+
+</style>
+</head>
+<body>
+<div id="container">
+<h1><img id="logo" src="/images/icon32.png"><span >Options</span></h1>
+<table cellpadding="0" cellspacing="0" border="0" id="tblMain">
+<tr class="native">
+<td>
+<h2><span >Capturing</span></h2>
+</td>
+<td>
+<p><span >options_label_specify_resizing_options</span></p>
+<button id="btnCapSettings"><span >options_button_setup</span>...</button>
+</td>
+</tr>
+<tr class="native">
+<td>
+<h2><span >Editor options</span></h2>
+</td>
+<td>
+<p><span >options_label_specify_editor_options</span></p>
+<button id="btnGeneralOptions"><span >options_button_setup</span>...</button>
+</td>
+</tr>
+<tr class="lite">
+<td>
+<h2><span >File settings</span></h2>
+</td>
+<td>
+  <p><span >Save Image as:</span></p>
+  <p>
+	<input type="radio" id="radImagePNG" name="radImageFormat" value="png"><label for="radImagePNG">PNG</label>
+    <br>
+	<input type="radio" id="radImageJPG" name="radImageFormat" value="jpg"><label for="radImageJPG">JPG</label><br>
+  </p>
+  
+  <p>&nbsp;</p>
+  <!--<button id="btnTemplateSettings" class="link-button" >Template settings...</button>-->
+  
+  <div id="divTemplateSettings">
+      <p>
+      	<span >Default filename template:</span> 
+        <input id="edtFilenameTemplate" type="text" size="40">
+      </p>
+      <table id="tblTemplate">
+      <tr>
+      <td><label id="url"> %u - <span >Page URL</span></label></td><td>%y - <span >Year</span></td><td>%H - <span >Hour</span></td></tr>
+      <tr>
+      <td>%t - <span >Page Title</span></td><td>%m - <span >Month</span></td>
+      <td>%M - <span >Minutes</span></td></tr>
+      <tr>
+      <td></td><td>%d - <span >Day</span></td>
+      <td>%S - <span >Seconds</span></td></tr>
+      
+      <tr><td><p>%n - <input id="edtTemplateNumber" type="text" size="3" min="0"></p></td>
+        <td colspan="2"><input id="chkTemplateNumberPad" type="checkbox"><label for="chkTemplateNumberPad"><span >Pad number with</span> <input id="edtTemplateNumberPad" type="text" size="3" min="1"> <span >zeroes</span></label></td></tr>
+      <tr><td colspan="3"><span >Limit filename length to</span> <input id="edtTemplateFilenameMaxLen" type="text" size="3" min="10"> <span >symbols</span></td></tr>
+      </table>
+      <p>
+      <button id="btnTemplateSettingsHide" class="link-button" >Hide template settings...</button>
+      </p>
+  </div> <!--divTemplateSettings-->
+</td>
+</tr>
+<tr>
+<td>
+<h2><span >Hotkey</span></h2>
+</td>
+<td>
+<table id="tblHotkeys">
+
+<!--<tr>
+<td><span >Last used action</span>:</td>
+<td><input id="edtHotkeyLastUsedAction" type="text"></td>
+<td class="native" colspan="2">&nbsp;</td>
+</tr>
+
+<tr>
+<td>
+<span >Capture visible part</span>:
+</td>
+<td><input id="edtHotkeyVisible" type="text"></td>
+<td class="native"><span >and</span></td>
+<td class="native">
+<select id="cmbVisibleHotkeyAction" >
+  <option value="0" >Edit</option>
+  <option value="1" >Save</option>
+  <option value="2" >Save to PDF</option>
+  <option value="3" >Send to OneNote</option>
+  <option value="4" >Upload</option>
+  <option value="5" >Print</option>
+  <option value="6" >Copy to Clipboard</option>
+  <option value="7" >E-Mail</option>
+  <option value="8" >Open in External Editor</option>
+</select> 
+</td>
+
+</tr>
+
+<tr>
+<td>
+<span >Capture entire page</span>:
+</td>
+<td><input id="edtHotkeyEntire" type="text"></td>
+<td class="native"><span >and</span></td>
+<td class="native">
+<select id="cmbEntireHotkeyAction" >
+  <option value="0" >Edit</option>
+  <option value="1" >Save</option>
+  <option value="2" >Save to PDF</option>
+  <option value="3" >Send to OneNote</option>
+  <option value="4" >Upload</option>
+  <option value="5" >Print</option>
+  <option value="6" >Copy to Clipboard</option>
+  <option value="7" >E-Mail</option>
+  <option value="8" >Open in External Editor</option>
+</select> 
+</td>
+</tr>
+-->
+<tr>
+<td>
+<span >Capture selection</span>:
+</td>
+<td><input id="edtHotkeySelection" type="text"></td>
+<td class="native"><span >and</span></td>
+<td class="native">
+<select id="cmbSelectionHotkeyAction" >
+  <option value="0" >Edit</option>
+  <option value="1" >Save</option>
+  <option value="2" >Save to PDF</option>
+  <option value="3" >Send to OneNote</option>
+  <option value="4" >Upload</option>
+  <option value="5" >Print</option>
+  <option value="6" >Copy to Clipboard</option>
+  <option value="7" >E-Mail</option>
+  <option value="8" >Open in External Editor</option>
+</select> 
+</td>
+</tr>
+<!--
+<tr class="native">
+<td>
+<span >Capture browser window</span>:
+</td>
+<td><input id="edtHotkeyBrowser" type="text"></td>
+<td class="native"><span >and</span></td>
+<td class="native">
+<select id="cmbBrowserHotkeyAction" >
+  <option value="0" >Edit</option>
+  <option value="1" >Save</option>
+  <option value="2" >Save to PDF</option>
+  <option value="3" >Send to OneNote</option>
+  <option value="4" >Upload</option>
+  <option value="5" >Print</option>
+  <option value="6" >Copy to Clipboard</option>
+  <option value="7" >E-Mail</option>
+  <option value="8" >Open in External Editor</option>
+</select> 
+</td>
+</tr>
+-->
+</table>
+
+
+</td>
+</tr>
+</table>
+<br>
+<br>
+<br>
+
+<button id="btnApply"><span >Apply</span></button>
+<button id="btnSave"><span >Save &amp; close</span></button>
+</div>
+</body>
+</html>

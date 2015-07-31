@@ -1,0 +1,20 @@
+Workflow: 
+
+1. User not yet entered his login/password: 
+1.1. Present the only screen with "Login" button
+1.2. Upon clicking "login" we ask login/password. 
+1.2.1. No check of login/pass is done at the momemnt. Need to add later?? 
+1.3. When login is first added, we show Main Screen (2) with additional text saying "success".
+2. Main screen: 
+2.1. "Change settings" - leads to login/password (1.2)
+2.2. "DO IT" - Makes a FULL PAGE screenshot 
+2.2.1. "Step 1": screen with options: 
+       - zoom in/out (as full page is printed)
+       - crop image
+       - draw on it
+2.2.2. "Step 2": pop up with options: 
+       - Subject
+       - Description
+       - "Send" button
+2.2.3. "Step 3": after sending, user gets a link to the post 
+2.2.3.1. In case of error, we give description of error we got

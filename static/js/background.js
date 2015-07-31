@@ -1,3 +1,4 @@
+var commPortName = "FireShot Comm Port #" + Math.ceil(Math.random() * 45309714203);
 var screenshot = '',
     cropAndPreview = function(coords) {
         var canvas = document.createElement('canvas'),
@@ -18,7 +19,15 @@ var screenshot = '',
             img.src = res;
         });
     },
-    receiveMessage = function(data) {
+    receiveMessage = function(data, callback) {
+        console.log(data, callback);
+        if (data && data.action) {
+            chrome.tabs.captureVisibleTab(null,{},function(dataUri){
+                console.log(dataUri);
+                if (callback) callback(dataUri);
+            });
+            return;
+        }
         if(data && data.image) {
             if(Array.isArray(data.image)) {
                 var canvas = document.createElement('canvas'),
@@ -57,7 +66,35 @@ var screenshot = '',
 
 chrome.runtime.onMessage.addListener(receiveMessage);
 
+/*            var port = chrome.runtime.connect({name: "knockknock"});
+            port.onMessage.addListener(function(msg) {
+                console.log("MSG?", msg);
+            });
 
+chrome.runtime.onConnect.addListener(function(port) {
+  console.assert(port.name == "knockknock");
+  port.onMessage.addListener(function(msg) {
+    console.log('.....');
+    if (msg.joke == "Knock knock")
+      port.postMessage({question: "Who's there?"});
+    else if (msg.answer == "Madame")
+      port.postMessage({question: "Madame who?"});
+    else if (msg.answer == "Madame... Bovary")
+      port.postMessage({question: "I don't get it."});
+  });
+});            
+
+
+
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+    console.log(request, sender.tab ?
+                "from a content script:" + sender.tab.url :
+                "from the extension");
+    if (request.greeting == "hello")
+      sendResponse({farewell: "goodbye"});
+  });
+*/
 // Add in context menu
 chrome.contextMenus.removeAll(function() {
     chrome.contextMenus.create({
@@ -105,3 +142,5 @@ chrome.contextMenus.removeAll(function() {
         }
     });
 });
+
+

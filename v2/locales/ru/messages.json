@@ -1,0 +1,387 @@
+﻿{
+	"application_title": {
+		"message": "CodeNinjas - скриншоты страниц и аннотации",
+		"description": "The title of the application, displayed in the web store."
+	},
+
+	"application_description": {
+		"message": "Делайте скриншоты, редактируйте их и сохраняйте в PDF/JPEG/GIF/PNG/BMP; печатайте, отправляйте в Clipboard, Photoshop или по e-mail",
+		"description": "The description of the application, displayed in the web store."
+	},
+
+	"action_capture_entire" : {
+		"message": "Захватить Всю страницу и",
+		"description": ""
+	},
+
+	"action_capture_visible" : {
+		"message": "Захватить Видимую область и",
+		"description":""
+	},
+
+	"action_capture_selection" : {
+		"message": "Захватить Регион и",
+		"description": ""
+	},
+	
+	"action_capture_entire_lite" : {
+		"message": "Захватить Всю страницу",
+		"description": ""
+	},
+
+	"action_capture_visible_lite" : {
+		"message": "Захватить Видимую область",
+		"description":""
+	},
+
+	"action_capture_selection_lite" : {
+		"message": "Захватить Регион",
+		"description": ""
+	},
+
+	"action_capture_browser" : {
+		"message": "Захватить Окно браузера и",
+		"description": ""
+	},
+
+	"action_resume" : {
+		"message": "Продолжить редактирование",
+		"description": ""
+	},
+
+	"action_open_file" : {
+		"message": "Открыть файл",
+		"description": ""
+	},
+
+	"action_open_clipboard" : {
+		"message": "Открыть из Буфера Обмена",
+		"description": ""
+	},
+
+	"action_options" : {
+		"message": "Настройки",
+		"description": ""
+	},
+
+	"action_register" : {
+		"message": "Зарегистрировать",
+		"description": ""
+	},
+
+	"action_enter_license" : {
+		"message": "Ввести лицензионную информацию",
+		"description": ""
+	},
+
+	"action_switch_pro" : {
+		"message": "Переключиться в режим Pro",
+		"description": ""
+	},
+
+	"action_view_demo" : {
+		"message": "Посмотреть демо",
+		"description": ""
+	},
+
+	"action_support" : {
+		"message": "Поддержка",
+		"description": ""
+	},
+
+	"action_api" : {
+		"message": "Автоматизация CodeNinjas",
+		"description": ""
+	},
+
+	"action_edit" : {
+		"message": "Редактировать",
+		"description": ""
+	},
+
+	"action_save" : {
+		"message": "Сохранить",
+		"description": ""
+	},
+
+	"action_save_pdf" : {
+		"message": "Сохранить в PDF",
+		"description": ""
+	},
+
+	"action_copy" : {
+		"message": "Поместить в Буфер обмена",
+		"description": ""
+	},
+
+	"action_email" : {
+		"message": "Отправить по E-Mail",
+		"description": ""
+	},
+	
+	"action_onenote" : {
+		"message": "Отправить в OneNote",
+		"description": ""
+	},
+
+	"action_external" : {
+		"message": "Открыть в другой программе",
+		"description": ""
+	},
+
+	"action_upload" : {
+		"message": "Опубликовать в Интернет",
+		"description": ""
+	},
+
+	"action_print" : {
+		"message": "Распечатать",
+		"description": ""
+	},
+
+	"options_label_CodeNinjas_options" : {
+		"message": "Настройки CodeNinjas",
+		"description": ""
+	},
+
+	"options_label_capturing" : {
+		"message": "Захват",
+		"description": ""
+	},
+
+	"options_label_editor_options" : {
+		"message": "Настройки Редактора",
+		"description": ""
+	},
+
+	"options_label_hotkey" : {
+		"message": "Горячая клавиша",
+		"description": ""
+	},
+
+	"options_label_specify_resizing_options" : {
+		"message": "Настройки ресайзинга по умолчанию, звука",
+		"description": ""
+	},
+
+	"options_label_specify_editor_options" : {
+		"message": "Настройки редактора и опций сохранения, именования файлов, стилей и прочие настройки",
+		"description": ""
+	},
+
+	"options_label_specify_hotkey" : {
+		"message": "Горячая клавиша запуска CodeNinjas:",
+		"description": ""
+	},
+
+	"options_button_setup" : {
+		"message": "Настроить",
+		"description": ""
+	},
+
+	"options_button_apply" : {
+		"message": "Применить",
+		"description": ""
+	},
+
+	"options_button_save_close" : {
+		"message": "Сохранить и закрыть",
+		"description": ""
+	},
+
+	"action_license_info" : {
+	"message": "Лицензионная информация...",
+	"description": "Popup menu command, opens licensing info if CodeNinjas is Pro"
+	},
+	
+	"action_about" : {
+	"message": "О программе...",
+	"description": "Popup menu command, opens window about CodeNinjas"
+	},
+	
+	"options_label_file_settings" : {
+		"message": "Настройки имени файла",
+		"description": ""
+	},
+	
+	"options_label_save_image_as" : {
+		"message": "Сохранять изображение как:",
+		"description": ""
+	},
+	
+	"options_label_default_filename_template" : {
+		"message": "Шаблон имени файла:",
+		"description": ""
+	},
+	
+	"options_label_template_url" : {
+		"message": "URL Страницы",
+		"description": ""
+	},
+	
+	"options_label_template_title" : {
+		"message": "Заголовок Страницы",
+		"description": ""
+	},
+	
+	"options_label_template_year" : {
+		"message": "Год",
+		"description": ""
+	},
+	
+	"options_label_template_month" : {
+		"message": "Месяц",
+		"description": ""
+	},
+	
+	"options_label_template_day" : {
+		"message": "День",
+		"description": ""
+	},
+	
+	"options_label_template_hour" : {
+		"message": "Час",
+		"description": ""
+	},
+	
+	"options_label_template_minutes" : {
+		"message": "Минуты",
+		"description": ""
+	},
+	
+	"options_label_template_seconds" : {
+		"message": "Секунды",
+		"description": ""
+	},
+	
+	"options_label_template_pad_1" : {
+		"message": "Выравнивать число",
+		"description": ""
+	},
+	
+	"options_label_template_pad_2" : {
+		"message": "нулями",
+		"description": ""
+	},
+	
+	"options_label_template_limit_1" : {
+		"message": "Ограничить длину имени файла до",
+		"description": ""
+	},
+	
+	"options_label_template_limit_2" : {
+		"message": "символов",
+		"description": ""
+	},
+	
+	"options_link_filename_template_settings" : {
+		"message": "Показать настройки шаблона имени файла...",
+		"description": ""
+	},
+	
+	"options_link_filename_template_settings_hide" : {
+		"message": "Спрятать настройки шаблона...",
+		"description": ""
+	},
+	
+	"options_label_last_action_hotkey" : {
+		"message": "Последнее действие",
+		"description": ""
+	},
+	
+	"options_label_and" : {
+		"message": "и",
+		"description": ""
+	},
+	
+	"captured_save_panel_title" : {
+		"message": "Сохранить Скриншот",
+		"description": ""
+	},
+	
+	"captured_save_as_image" : {
+		"message": "Сохранить как изображение",
+		"description": ""
+	},
+	
+	"captured_save_as_pdf" : {
+		"message": "Сохранить в PDF",
+		"description": ""
+	},
+	
+	"captured_copy_clipboard" : {
+		"message": "Копировать",
+		"description": ""
+	},
+	
+	"captured_print" : {
+		"message": "Распечатать",
+		"description": ""
+	},
+	
+	"captured_save_as_image_button" : {
+		"message": "Сохранить",
+		"description": ""
+	},
+	
+	"captured_copy_clipboard_learn_button" : {
+		"message": "Узнать как...",
+		"description": ""
+	},
+	
+	"captured_print_button" : {
+		"message": "Распечатать",
+		"description": ""
+	},
+	
+	"action_micsellaneous" : {
+		"message": "Разное",
+		"description": ""
+	},
+
+	"options_capture_browser" : {
+		"message": "Захватить окно браузера",
+		"description": ""
+	},
+
+	"action_install_native" : {
+		"message": "Больше функций хороших и разных",
+		"description": ""
+	},
+
+	
+	"captured_upgrade_link_1" : {
+		"message": "Установите улучшенную версию для Редактирования, улучшенной Печати и Записи в PDF, Загрузок на WWW и FTP, отправки по E-Mail, экспорту в другие редакторы и OneNote",
+		"description": ""
+	},
+	
+	"captured_upgrade_link_2" : {
+		"message": "Обновить до CodeNinjas Pro",
+		"description": ""
+	},
+	
+	"captured_upgrade_link_3" : {
+		"message": "Кажется, я использовал другую версию CodeNinjas",
+		"description": ""
+	},
+	
+	"captured_upgrade_link_4" : {
+		"message": "Как вернуть её назад?",
+		"description": ""
+	},
+	
+	"captured_setup_hotkeys" : {
+		"message": "Настройка горячих клавиш и шаблона имени файла...",
+		"description": ""
+	},
+	
+	"captured_recommend_us" : {
+		"message": "Порекомендовать CodeNinjas",
+		"description": ""
+	},
+	
+	"void" : {
+		"message": "",
+		"description": "this is a void entry"
+	}
+}

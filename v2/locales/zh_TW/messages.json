@@ -1,0 +1,386 @@
+﻿{
+	"application_title": {
+		"message": "捕捉網頁截圖 - CodeNinjas的",
+		"description": "The title of the application, displayed in the web store."
+	},
+	
+	"application_description": {
+		"message": "捕捉網頁截圖，然後編輯，並將它們保存到PDF，JPEG，GIF，PNG或BMP，上傳，打印，在Photoshop中打開，複製到剪貼板或電子郵件",
+		"description": "The description of the application, displayed in the web store."
+	},
+	
+	"action_capture_entire" : {
+		"message": "截取整個頁面並", 
+		"description": "First part of the command in the popup menu: Capture entire page and (Edit, Save, Print, etc)"
+	},	
+	
+	"action_capture_visible" : {
+		"message": "截取可見區域並",
+		"description":"First part of the command in the popup menu: Capture visible part and (Edit, Save, Print, etc)"
+	},
+	
+	"action_capture_selection" : {
+		"message": "截取選擇的區域並",
+		"description": "First part of the command in the popup menu: Capture selection and (Edit, Save, Print, etc)"
+	},
+	
+	"action_capture_entire_lite" : {
+		"message": "捕捉整個頁面",
+		"description": ""
+	},
+
+	"action_capture_visible_lite" : {
+		"message": "捕捉可見部分",
+		"description":""
+	},
+
+	"action_capture_selection_lite" : {
+		"message": "捕獲的選擇",
+		"description": ""
+	},
+	
+	"action_capture_browser" : {
+		"message": "截取瀏覽器視窗並",
+		"description": "First part of the command in the popup menu: Capture browser window and (Edit, Save, Print, etc)"
+	},
+	
+	"action_resume" : {
+		"message": "繼續編輯",
+		"description": "Popup menu command, opening editor and previous capture"
+	},
+	
+	"action_open_file" : {
+		"message": "開啟檔案並編輯",
+		"description": "Popup menu command, loading file into CodeNinjas"
+	},
+	
+	"action_open_clipboard" : {
+		"message": "開啟剪貼簿中的圖檔",
+		"description": "Popup menu command, opens editor and captures the image from clipboard"
+	},
+
+	"action_options" : {
+		"message": "選項",
+		"description": "Popup menu command, opens options page"
+	},	
+	
+	"action_register" : {
+		"message": "註冊",
+		"description": "Popup menu command, registering the Pro version"
+	},
+	
+	"action_enter_license" : {
+		"message": "輸入認證碼",
+		"description": "Popup menu command, opens dialog to enter the licensing information"
+	},
+	
+	"action_switch_pro" : {
+		"message": "升級至Pro",
+		"description": "Popup menu command, switches CodeNinjas into Pro mode"
+	},
+	
+	"action_view_demo" : {
+		"message": "觀看示範",
+		"description": "Popup menu command, opens web page in a new tab with a Flash demo"
+	},
+	
+	"action_support" : {
+		"message": "支援",
+		"description": "Popup menu command, opens web page in a new tab with the support forum"
+	},
+	
+	"action_api" : {
+		"message": "CodeNinjas API",
+		"description": "Popup menu command, opens web page in a new tab with some info about CodeNinjas API"
+	},
+	
+	"action_edit" : {
+		"message": "編輯",
+		"description": "Popup menu command, captures web page and opens editor"
+	},
+	
+	"action_save" : {
+		"message": "儲存",
+		"description": "Popup menu command, captures web page and saves it to disk as image file"
+	},
+	
+	"action_save_pdf" : {
+		"message": "另存為PDF",
+		"description": "Popup menu command, captures web page and saves it as PDF"
+	},
+	
+	"action_copy" : {
+		"message": "複製到剪貼簿",
+		"description": "Popup menu command, captures web page and places it into clipboard as bitmap"
+	},
+	
+	"action_email" : {
+		"message": "用電子郵件發送",
+		"description": "Popup menu command, captures web page and sends it via email"
+	},
+	
+	"action_external" : {
+		"message": "用外部編輯器開啟",
+		"description": "Popup menu command, captures web page and opens it in a third-party editor"
+	},
+	
+	"action_onenote" : {
+		"message": "剪貼至OneNote",
+		"description": "Popup menu command, captures web page and opens it in MS OneNote"
+	},
+	
+	"action_upload" : {
+		"message": "上傳",
+		"description": "Popup menu command, captures web page and uploads it to image hosting engine"
+	},
+	
+	"action_print" : {
+		"message": "列印",
+		"description": "Popup menu command, captures web page and sends it to printer"
+	},
+	
+	"options_label_CodeNinjas_options" : {
+		"message": "CodeNinjas的選項",
+		"description": "Options page, main header of the dialog"
+	},
+	
+	"options_label_capturing" : {
+		"message": "捕獲",
+		"description": "Options page, label of the Capturing section"
+	},
+	
+	"options_label_editor_options" : {
+		"message": "編輯選項",
+		"description": "Options page, label of the Editor options section"
+	},
+	
+	"options_label_hotkey" : {
+		"message": "熱鍵",
+		"description": "Options page, label of the Hotkey section"
+	},
+	
+	"options_label_specify_resizing_options" : {
+		"message": "指定大小調整選項和聲音。",
+		"description": "Options page, label"
+	},
+	
+	"options_label_specify_editor_options" : {
+		"message": "指定編輯和節能選項，文件命名的喜好，風格等",
+		"description": "Options page, label"
+	},
+	
+	"options_label_specify_hotkey" : {
+		"message": "指定的組合鍵來啟動CodeNinjas的：",
+		"description": "Options page, label"
+	},
+	
+	"options_button_setup" : {
+		"message": "點擊安裝",
+		"description": "Options page, button caption, opens additional dialog"
+	},
+	
+	"options_button_apply" : {
+		"message": "運用",
+		"description": "Options page, button caption, applies settings"
+	},
+	
+	"options_button_save_close" : {
+		"message": "保存並關閉",
+		"description": "Options page, button caption, stores settings and closes dialog"
+	},
+	
+	"action_license_info" : {
+		"message": "許可信息...",
+		"description": "Popup menu command, opens licensing info if CodeNinjas is Pro"
+	},
+	
+	"action_about" : {
+		"message": "關於節目...",
+		"description": "Popup menu command, opens window about CodeNinjas"
+	},
+	
+	"options_label_file_settings":{
+		"message":"文件設置", 
+		"description":""
+	}, 
+
+	"options_label_save_image_as":{
+		"message":"圖像另存為", 
+		"description":""
+	}, 
+
+	"options_label_default_filename_template":{
+		"message":"默認的文件名模板", 
+		"description":""
+	}, 
+
+	"options_label_template_url":{
+		"message":"頁面URL",
+		"description":""
+	}, 
+
+	"options_label_template_title":{
+		"message":"頁面標題", 
+		"description":""
+	}, 
+
+	"options_label_template_year":{
+		"message":"年", 
+		"description":""
+	}, 
+
+	"options_label_template_month":{
+		"message":"月", 
+		"description":""
+	}, 
+
+	"options_label_template_day":{
+		"message":"日", 
+		"description":""
+	}, 
+
+	"options_label_template_hour":{
+		"message":"小時", 
+		"description":""
+	}, 
+
+	"options_label_template_minutes":{
+		"message":"紀要", 
+		"description":""
+	}, 
+
+	"options_label_template_seconds":{
+		"message":"秒",
+		"description":""
+	}, 
+
+	"options_label_template_pad_1":{
+		"message":"有墊數", 
+		"description":""
+	}, 
+
+	"options_label_template_pad_2":{
+		"message":"零", 
+		"description":""
+	}, 
+
+	"options_label_template_limit_1":{
+		"message":"限制文件名長度", 
+		"description":""
+	}, 
+
+	"options_label_template_limit_2":{
+		"message":"符號", 
+		"description":""
+	}, 
+
+	"options_link_filename_template_settings":{
+		"message":"顯示文件名模板設置...",
+		"description":""
+	}, 
+
+	"options_link_filename_template_settings_hide":{
+		"message":"隱藏文件名模板設置...",
+		"description":""
+	}, 
+
+	"options_label_last_action_hotkey":{
+		"message":"最近發布的行動", 
+		"description":""
+	}, 
+
+	"options_label_and":{
+		"message":"和",
+		"description":""
+	}, 
+
+	"captured_save_panel_title":{
+		"message":"保存截圖",
+		"description":""
+	}, 
+
+	"captured_save_as_image":{
+		"message":"另存為圖片", 
+		"description":""
+	}, 
+
+	"captured_save_as_pdf":{
+		"message":"保存為PDF", 
+		"description":""
+	}, 
+
+	"captured_copy_clipboard":{
+		"message":"複製到剪貼板", 
+		"description":""
+	}, 
+
+	"captured_print":{
+		"message":"打印", 
+		"description":""
+	}, 
+
+	"captured_save_as_image_button":{
+		"message":"另存為圖片", 
+		"description":""
+	}, 
+
+	"captured_copy_clipboard_learn_button":{
+		"message":"學習如何...",
+		"description":""
+	}, 
+
+	"captured_print_button":{
+		"message":"打印", 
+		"description":""
+	}, 
+
+	"action_micsellaneous":{
+		"message":"雜項", 
+		"description":""
+	}, 
+
+	"options_capture_browser":{
+		"message":"捕捉瀏覽器窗口",
+		"description":""
+	}, 
+
+	"action_install_native":{
+		"message":"安裝先進的功能", 
+		"description":""
+	}, 
+
+	"captured_upgrade_link_1":{
+		"message":"升級到編輯,高級打印/保存為PDF文件,上傳,電子郵件,發送到OneNote,或導出...",
+		"description":""
+	}, 
+
+	"captured_upgrade_link_2":{
+		"message":"升級到CodeNinjas的職業", 
+		"description":""
+	}, 
+
+	"captured_upgrade_link_3":{
+		"message":"我用的是另一個版本的CodeNinjas的了", 
+		"description":""
+	}, 
+
+	"captured_upgrade_link_4":{
+		"message":"我可以把它找回來？",
+		"description":""
+	}, 
+
+	"captured_setup_hotkeys":{
+		"message":"設置熱鍵和文件設置...",
+		"description":""
+	}, 
+
+	"captured_recommend_us":{
+		"message":"推薦CodeNinjas的",
+		"description":""
+	},
+	
+	"void" : {
+		"message": "",
+		"description": "this is a void entry"
+	}
+}

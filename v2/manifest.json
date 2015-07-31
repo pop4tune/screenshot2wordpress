@@ -1,0 +1,40 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  
+  "manifest_version": 2,
+  "name": "CodeNinjas screenshooter",
+  "short_name": "CodeNinjas",
+  "version": "0.1",
+  "description": "CodeNinjas screen shot utility",
+  "options_page": "fsOptions.html",
+
+  "background": { "scripts":
+      ["scripts/fsUtils.js",
+       "scripts/fsCommands.js",
+       "scripts/fsBackground.js",
+       "scripts/fsSSS.js",
+       "scripts/fsNativeAPISupport.js",
+       "scripts/3p/base64.js"
+  ]},
+
+  "content_scripts": [ {
+      "js": [  "scripts/fsUtils.js", "scripts/fsSelection.js", "scripts/fsContent.js"],
+      "matches": [ "http://*/*", "https://*/*"],
+      "run_at": "document_start"
+   } ],
+
+  "permissions": ["<all_urls>", "contextMenus", "nativeMessaging"],
+
+  "browser_action": {
+      "default_icon": "images/icon19.png",
+      "default_title": "Capture",
+      "default_popup": "fsPopup.html"
+  },
+
+  "icons": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "128": "images/icon128.png"
+  }
+}

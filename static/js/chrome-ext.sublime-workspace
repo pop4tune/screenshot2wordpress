@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"sta",
+				"startIt"
+			],
+			[
+				"daa",
+				"dataUri"
+			],
+			[
+				"ini",
+				"initRegion"
+			],
+			[
+				"init",
+				"initRegion"
+			],
+			[
+				"scr",
+				"scrollNext"
+			],
+			[
+				"cm",
+				"cModeSelected"
+			],
+			[
+				"cM",
+				"cModeVisible"
+			],
+			[
 				"show",
 				"showStatus"
 			],
@@ -96,10 +124,6 @@
 				"editableCellTemplate"
 			],
 			[
-				"ini",
-				"initList"
-			],
-			[
 				"wi",
 				"width"
 			],
@@ -122,10 +146,6 @@
 			[
 				"curre",
 				"currentTab"
-			],
-			[
-				"init",
-				"initSocket"
 			],
 			[
 				"font",
@@ -494,128 +514,70 @@
 			[
 				"pass",
 				"password"
-			],
-			[
-				"onl",
-				"onlyIfChanged"
-			],
-			[
-				"acti",
-				"actionForAudit"
-			],
-			[
-				"_obj",
-				"_objNew"
-			],
-			[
-				"sing",
-				"singleTask"
-			],
-			[
-				"ge",
-				"generateDiff"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "Searching 39 files for \"64px\"\n\n/Users/akve/work/volodarik/ext/static/js/network.js:\n    4      \n    5      var displayName = app.name.replace(/[^a-z0-9\\s]/gi, '').replace(/\\s{2,}/g, ' ').replace(/\\s/g, '-')\n    6:         url = 'http://64px.com/' + encodeURIComponent(displayName).toLowerCase() + '/' + app.id + '/install';\n    7      \n    8      window.open(url);\n\n/Users/akve/work/volodarik/ext/static/js/preview.js:\n  103              }\n  104              \n  105:             $.get('http://s3policy.64px.com', function(res) {\n  106                  policyCache = res;\n  107                  upload(res);\n\n2 matches across 2 files\n\n\nSearching 41 files for \"region.html\"\n\n/Users/akve/work/volodarik/ext/manifest.json:\n   20     },\n   21     \"content_security_policy\": \"script-src 'self' https://ssl.google-analytics.com; object-src 'self'\",\n   22:    \"web_accessible_resources\": [\"region.html\"],\n   23     \"manifest_version\": 2,\n   24     \"permissions\": [ \"tabs\", \"<all_urls>\", \"storage\",\"contextMenus\"],\n\n/Users/akve/work/volodarik/ext/static/js/region.inject.js:\n    1  (function() {\n    2      var div = document.createElement('div'),\n    3:         src = chrome.extension.getURL('region.html'),\n    4          clear = function() {\n    5              var els = document.getElementsByClassName(\"ScreenshotInjectFrameOverlay\");\n\n2 matches across 2 files\n\n\nSearching 41 files for \"tooltip\"\n\n/Users/akve/work/volodarik/ext/region.html:\n    8          <img id=\"blank\" src=\"static/img/trans.gif\" />\n    9          <div id=\"buttons\">\n   10:             <button id=\"tooltip\">TAKE SCREENSHOT</button><button id=\"cancel\">X</button>\n   11          </div>\n   12          <script type=\"text/javascript\" src=\"static/js/jquery.js\"></script>\n\n/Users/akve/work/volodarik/ext/settings.html:\n    6          <img id=\"blank\" src=\"static/img/trans.gif\" />\n    7          <div id=\"buttons\">\n    8:             <button id=\"tooltip\">Save</button><button id=\"cancel\">Cancel</button>\n    9          </div>\n   10          <script type=\"text/javascript\" src=\"static/js/jquery.js\"></script>\n\n/Users/akve/work/volodarik/ext/static/js/region.js:\n   23      });\n   24      \n   25:     $('#tooltip').on('click', function(e) {\n   26          $('body').empty();\n   27          setTimeout(function() {\n\n3 matches across 3 files\n\n\nSearching 45 files for \"tooltip\"\n\n/Users/akve/work/volodarik/ext/region.html:\n    8          <img id=\"blank\" src=\"static/img/trans.gif\" />\n    9          <div id=\"buttons\">\n   10:             <button id=\"tooltip\">TAKE SCREENSHOT</button><button id=\"cancel\">X</button>\n   11          </div>\n   12          <script type=\"text/javascript\" src=\"static/js/jquery.js\"></script>\n\n/Users/akve/work/volodarik/ext/settings.html:\n   10          	Password: <br>\n   11          	<input type=\"password\" id=\"passwd\"><br>\n   12:             <button id=\"tooltip\">Save</button><button id=\"cancel\">Cancel</button>\n   13          </div>\n   14          <script type=\"text/javascript\" src=\"static/js/jquery.js\"></script>\n\n/Users/akve/work/volodarik/ext/static/js/region.js:\n   23      });\n   24      \n   25:     $('#tooltip').on('click', function(e) {\n   26          $('body').empty();\n   27          setTimeout(function() {\n\n/Users/akve/work/volodarik/ext/static/js/settings.js:\n    1  (function() {\n    2      \n    3:     $('#tooltip').on('click', function(e) {\n    4          localStorage['login'] = $('#login').val();\n    5          localStorage['passwd'] = $('#passwd').val();\n\n4 matches across 4 files\n\n\nSearching 45 files for \"localstorage\"\n\n/Users/akve/work/volodarik/ext/static/js/network.js:\n    1  (function(app, didRun) {\n    2      if(didRun) { return; }\n    3:     localStorage._networkOnce = '1';\n    4      \n    5      var displayName = app.name.replace(/[^a-z0-9\\s]/gi, '').replace(/\\s{2,}/g, ' ').replace(/\\s/g, '-')\n    .\n    7      \n    8  //    window.open(url);\n    9: })(chrome.app.getDetails(), localStorage._networkOnce);\n\n/Users/akve/work/volodarik/ext/static/js/settings.js:\n    1  (function() {\n    2:     alert(localStorage)\n    3:     $('#login').val(localStorage['login']);\n    4  \n    5      $('#tooltip').on('click', function(e) {\n    6:         localStorage['login'] = $('#login').val();\n    7:         localStorage['passwd'] = $('#passwd').val();\n    8          $('body').empty();\n    9          setTimeout(function() {\n\n6 matches across 2 files\n",
+			"file": "/Users/akve/work/volodarik/mak/manifest.json",
 			"settings":
 			{
-				"buffer_size": 4356,
+				"buffer_size": 1035,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 68 files for \"sss_\" (regex)\n\n/Users/akve/work/volodarik/mak/fsCaptured.html:\n   37              <div class=\"col-lg-12\">\n   38                  <h2 class=\"page-header\">\n   39:                 <img id=\"logo\" src=\"/images/sss_48.png\"><span ></span>\n   40                  </h2>\n   41              </div>\n\n/Users/akve/work/volodarik/mak/fsNativeInstall.html:\n   58  \n   59       <h1 class=\"page-header\">\n   60: 		<img id=\"logo\" src=\"/images/sss_48.png\">Advanced features for CodeNinjas  <small>(one-time installation how-to)</small>\n   61       </h1>  \n   62  	\n\n/Users/akve/work/volodarik/mak/fsOptions.html:\n   60  <body>\n   61  <div id=\"container\">\n   62: <h1><img id=\"logo\" src=\"/images/sss_48.png\"><span >options_label_CodeNinjas_options</span></h1>\n   63  <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" id=\"tblMain\">\n   64  <tr class=\"native\">\n\n/Users/akve/work/volodarik/mak/manifest.json:\n   28  \n   29    \"browser_action\": {\n   30:       \"default_icon\": \"images/sss_19.png\",\n   31        \"default_title\": \"Capture\",\n   32        \"default_popup\": \"fsPopup.html\"\n\n4 matches across 4 files\n\n\nSearching 68 files for \"btnapply\" (regex)\n\n/Users/akve/work/volodarik/mak/fsOptions.html:\n  228  <br>\n  229  \n  230: <button id=\"btnApply\"><span >Apply</span></button>\n  231  <button id=\"btnSave\"><span >Save &amp; close</span></button>\n  232  </div>\n\n/Users/akve/work/volodarik/mak/scripts/fsOptions.js:\n   83  	});\n   84  \n   85: 	$('#btnApply').click(function() {\n   86  		CodeNinjasSettings.saveSettings(); \n   87  	});\n\n2 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 1556,
 				"line_ending": "Unix",
 				"name": "Find Results",
 				"scratch": true
 			}
 		},
 		{
-			"file": "region.js",
+			"file": "/Users/akve/work/volodarik/mak/fsCaptured.html",
 			"settings":
 			{
-				"buffer_size": 1171,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "settings.js",
-			"settings":
-			{
-				"buffer_size": 452,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "region.inject.js",
-			"settings":
-			{
-				"buffer_size": 970,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/akve/work/volodarik/ext/manifest.json",
-			"settings":
-			{
-				"buffer_size": 847,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "network.js",
-			"settings":
-			{
-				"buffer_size": 392,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "preview.js",
-			"settings":
-			{
-				"buffer_size": 6144,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/akve/work/volodarik/ext/popup.html",
-			"settings":
-			{
-				"buffer_size": 1200,
+				"buffer_size": 10211,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "popup.js",
+			"file": "/Users/akve/work/volodarik/mak/fsOptions.html",
 			"settings":
 			{
-				"buffer_size": 4223,
+				"buffer_size": 6265,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/Users/akve/work/volodarik/ext/settings.html",
+			"contents": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n        \"http://www.w3.org/TR/html4/loose.dtd\">\n<html>\n<head>\n  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n  <script src=\"scripts/fsUtils.js\"></script>\n  <script src=\"scripts/fsPopup.js\"></script>\n  <title></title>\n\n<link rel=\"stylesheet\" href=\"css/fspopup.css\" type=\"text/css\" />\n\n\n</head>\n\n<body style=\"overflow:visible;width:300px;height:300px;\">\n\n<div id=\"login\">\n    Login: <br>\n  <input id=\"login\" type=\"text\"><br>\n  Password: <br>\n  <input type=\"password\" id=\"passwd\"><br>\n    <button id=\"tooltip\">Save</button><button id=\"cancel\">Cancel</button>\n</div>\n\n<div id=\"mnuMain\" style=\"display:none\">\n<div>\n <ul>\n   <li id=\"mnuQuickLaunch\"><div class=\"left\"><img src=\"images/quicklaunch.png\"><span id=\"spnLastAction\">And:</span></div><div class=\"right\"><span id=\"spnShortcut\">Ctrl+Alt+Z</span></div></li>\n </ul>\n</div>\n<div class=\"separator\"></div>\n<div id=\"divCaptureTools\">\n <ul>\n   <li id=\"mnuCaptureEntire\"><div class=\"left\"><img src=\"images/capture_mode_full.png\"><span >_Capture entire page and</span> ...</div><div class=\"right\"><img src=\"images/arrow.png\"></div></li>\n   <li id=\"mnuCaptureVisible\"><div class=\"left\"><img src=\"images/capture_mode_visible.png\"><span >_Capture visible part and</span> ...</div><div class=\"right\"><img src=\"images/arrow.png\"></div></li>\n   <li id=\"mnuCaptureSelection\"><div class=\"left\"><img src=\"images/capture_mode_selected.png\"><span >_Capture selection and</span> ...</div><div class=\"right\"><img src=\"images/arrow.png\"></div></li>\n   <li id=\"mnuCaptureBrowser\"><div class=\"left\"><img src=\"images/capture_mode_browser.png\"><span >_Capture browser window and</span> ...</div><div class=\"right\"><img src=\"images/arrow.png\"></div></li>\n </ul> \n</div>\n\n<div>\n <ul>\n <li id=\"mnuPreferencesLite\"><div class=\"left\"><img src=\"images/options.png\"><span >_Options</span> ...</div></li>\n   <li id=\"mnuMiscellaneousFolder\"><div class=\"left\"><span >Miscellaneous</span> ...</div><div class=\"right\"><img src=\"images/arrow.png\"></div></li>\n   <div id=\"sepAdvanced\" class=\"separator\"></div>\n   <li id=\"mnuUpgrade\" title=\"Switch your CodeNinjas to powerful Pro edition\"><div class=\"left\"><img src=\"images/rocket.png\"><span >_Switch to Pro</span>!</div></li>\n   <li id=\"mnuCodeNinjasNative\"><div class=\"left\"><img src=\"images/plus.png\"><span >Advanced functions</span> ...</div></li>\n   <li id=\"mnuRegister\"><div class=\"left\"><span >_Register</span> ...</div></li>\n   <li id=\"mnuLicenseInfo\"><div class=\"left\"><span >_License Info</span></div></li>\n  <!-- <li id=\"mnuCapPreferences\"><div class=\"left\">Capture options...</li>-->\n </ul>\n</div>\n</div>\n\n</div>\n\n</body>\n</html>\n",
+			"file": "/Users/akve/work/volodarik/mak/fsPopup.html",
+			"file_size": 6081,
+			"file_write_time": 1438293697000000,
 			"settings":
 			{
-				"buffer_size": 637,
-				"line_ending": "Unix",
-				"name": "settings"
+				"buffer_size": 2687,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/Users/akve/work/volodarik/ext/preview.html",
+			"file": "/Users/akve/work/volodarik/mak/scripts/fsContent.js",
 			"settings":
 			{
-				"buffer_size": 3058,
-				"line_ending": "Unix"
+				"buffer_size": 16354,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/Users/akve/work/volodarik/ext/post2.php",
+			"file": "/Users/akve/work/volodarik/mak/scripts/fsOptions.js",
 			"settings":
 			{
-				"buffer_size": 1629,
-				"line_ending": "Unix"
+				"buffer_size": 4358,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -655,9 +617,51 @@
 	},
 	"file_history":
 	[
+		"/Users/akve/work/volodarik/mak/manifest.json",
+		"/Users/akve/work/volodarik/mak/scripts/fsScriptChecker.js",
+		"/Users/akve/work/volodarik/ext/static/js/region.inject.js",
+		"/Users/akve/work/volodarik/mak/scripts/fsBackground.js",
+		"/Users/akve/work/volodarik/mak/scripts/fsCaptured.js",
+		"/Users/akve/work/volodarik/mak/scripts/fsCommands.js",
+		"/Users/akve/work/volodarik/mak/fsCaptured.html",
+		"/Users/akve/work/volodarik/mak/fsNativeInstall.html",
+		"/Users/akve/work/volodarik/mak/fsOptions.html",
+		"/Users/akve/work/volodarik/mak/fsPopup.html",
+		"/Users/akve/work/volodarik/mak/fsPopupLocked.html",
+		"/Users/akve/work/volodarik/mak/locales/de/messages.json",
+		"/Users/akve/work/volodarik/mak/locales/en/messages.json",
+		"/Users/akve/work/volodarik/mak/locales/es/messages.json",
+		"/Users/akve/work/volodarik/mak/locales/fr/messages.json",
+		"/Users/akve/work/volodarik/mak/locales/ja/messages.json",
+		"/Users/akve/work/volodarik/mak/locales/ru/messages.json",
+		"/Users/akve/work/volodarik/mak/locales/zh_CN/messages.json",
+		"/Users/akve/work/volodarik/mak/locales/zh_TW/messages.json",
+		"/Users/akve/work/volodarik/mak/scripts/fsUtils.js",
+		"/Users/akve/work/volodarik/mak/scripts/fsContent.js",
+		"/Users/akve/work/volodarik/mak/scripts/fsNativeAPISupport.js",
+		"/Users/akve/work/volodarik/mak/scripts/fsNativeInstall.js",
+		"/Users/akve/work/volodarik/mak/scripts/fsOptions.js",
+		"/Users/akve/work/volodarik/mak/scripts/fsPopup.js",
+		"/Users/akve/work/volodarik/mak/scripts/fsSelection.js",
+		"/Users/akve/work/volodarik/ext/static/js/region2.js",
+		"/Users/akve/work/volodarik/ext/static/js/popup.js",
+		"/Users/akve/work/volodarik/ext/static/js/background.js",
+		"/Users/akve/work/volodarik/ext/region.html",
+		"/Users/akve/work/volodarik/mak/metadata/verified_contents.json",
+		"/Users/akve/work/volodarik/ext/manifest.json",
+		"/Users/akve/work/volodarik/ext/post2.php",
+		"/Users/akve/work/volodarik/ext/preview.html",
+		"/Users/akve/work/volodarik/ext/settings.html",
+		"/Users/akve/work/volodarik/ext/popup.html",
+		"/Users/akve/work/volodarik/ext/static/js/preview.js",
+		"/Users/akve/work/volodarik/ext/static/js/network.js",
+		"/Users/akve/work/volodarik/ext/static/js/settings.js",
+		"/Users/akve/work/volodarik/ext/mame.txt",
+		"/Users/akve/work/volodarik/ext/Workflow.txt",
+		"/Users/akve/work/volodarik/ext/static/js/region.js",
+		"/Users/akve/work/volodarik/ext/static/js/chrome-ext.sublime-workspace",
 		"/Users/akve/work/volodarik/ext/static/css/preview.css",
 		"/Users/akve/work/volodarik/ext/ixr.php",
-		"/Users/akve/work/volodarik/ext/post2.php",
 		"/Users/akve/work/volodarik/ext/post.php",
 		"/Users/akve/work/volodarik/ext/static/settings.html",
 		"/Users/akve/Downloads/ext1/extension_1_1/extension_1_1/preview.html",
@@ -740,49 +744,7 @@
 		"/Users/akve/work/uvision/oscm3/app/mvc/views/lightboxes/inline_folder_editor.html",
 		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/editors/plain.html",
 		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/editors/date.html",
-		"/Users/akve/work/uvision/oscm3/app/mvc/filters/os_filters.js",
-		"/Users/akve/work/uvision/oscm3/app/core/polyfiller.js",
-		"/Users/akve/work/uvision/oscm3/app/core/shims/form-validation.js",
-		"/Users/akve/work/uvision/oscm3/app/core/shims/styles/shim-ext.css",
-		"/Users/akve/work/uvision/oscm3/app/core/shims/combos/5.js",
-		"/Users/akve/work/uvision/oscm3/app/core/shims/combos/3.js",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/editor.html",
-		"/Users/akve/work/uvision/oscm3/nodejs/node_modules/socket-helper.js",
-		"/Users/akve/work/uvision/oscm3/app/css/tree.css",
-		"/Users/akve/work/uvision/oscm3/nodejs/middleware/batch/index.js",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/contracts/contract_information.html",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/_trash_item.html",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/acceptance_certificate.html",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/amendment.html",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/change_request.html",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/contract.html",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/custom_contract.html",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/exhibit.html",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/folder.html",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/new_version.html",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/sow.html",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/folders/types/trash_folder.html",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/main/mini_tree.html",
-		"/Users/akve/work/uvision/oscm3/app/css/mystyle.css",
-		"/Users/akve/work/uvision/oscm3/app/css/contracts.css",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/smart_search/results_rows_detailed.html",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/smart_search/results_rows_content.html",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/smart_search/results_rows.html",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/smart_search/results.html",
-		"/Users/akve/work/uvision/oscm3/app/mvc/controllers/errors_controller.js",
-		"/Users/akve/work/uvision/oscm3/app/mvc/models/search_model.js",
-		"/Users/akve/Documents/onthego",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/lightboxes/admin_new_role.html",
-		"/Users/akve/work/uvision/oscm3/app/bower_components/bg-splitter/js/splitter.js",
-		"/Users/akve/work/uvision/oscm3/nodejs/node_modules/migration-controller.js",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/lightboxes/admin_new_template.html",
-		"/Users/akve/work/uvision/oscm3/app/mvc/controllers_combined.js",
-		"/Users/akve/work/uvision/oscm3/app/temp/lang.json",
-		"/Users/akve/work/uvision/oscm3/nodejs/node_modules/box-sdk/lib/connector.js",
-		"/Users/akve/work/uvision/oscm3/nodejs/node_modules/email-controller.js",
-		"/Users/akve/work/uvision/oscm3/nodejs/node_modules/passport/lib/middleware/authenticate.js",
-		"/Users/akve/work/uvision/oscm3/app/mvc/views/lightboxes/admin_new_user.html",
-		"/Users/akve/work/uvision/oscm3/nodejs/emailtemplates/jade/user-wrong-password/subject.jade"
+		"/Users/akve/work/uvision/oscm3/app/mvc/filters/os_filters.js"
 	],
 	"find":
 	{
@@ -793,6 +755,11 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/akve/work/volodarik/mak",
+			"/Users/akve/work/volodarik/ext",
+			"/Users/akve/work/volodarik/mak",
+			"/Users/akve/work/volodarik/ext",
+			"/Users/akve/work/volodarik/mak",
 			"/Users/akve/work/volodarik/ext",
 			"/Users/akve/downloads/ext1",
 			"/Users/akve/work/uvision/oscm3/app",
@@ -915,11 +882,6 @@
 			"/Users/akve/work/uvision/oscm3/nodejs",
 			"/Users/akve/work/uvision/oscm3/app",
 			"/Users/akve/work/uvision/oscm3/nodejs",
-			"/Users/akve/work/uvision/oscm3",
-			"/Users/akve/work/uvision/oscm3/nodejs",
-			"/Users/akve/work/uvision/oscm3",
-			"/Users/akve/work/uvision/oscm3/nodejs",
-			"/Users/akve/work/uvision/oscm3/app",
 			"/Users/akve/work/uvision/oscm3"
 		]
 	},
@@ -928,6 +890,41 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"btnapply",
+			"sss_",
+			"initdone",
+			"data-i18n=\"(.*?)\"",
+			"FireShot",
+			"tabId",
+			"_local",
+			"loadscript",
+			"loadscr",
+			"doCapturing",
+			"port",
+			"removeRegion",
+			"sendmes",
+			"startIt",
+			"prent.",
+			"chrome",
+			"scrollDone",
+			"selectdone",
+			"initdo",
+			"scrollNext",
+			"areaSelected",
+			"areaSelectionCanceled",
+			"fireshotse",
+			"enableSomeElements",
+			"cmodeentire",
+			"cmode",
+			"logto",
+			"FireShotSelection",
+			"region.inject",
+			"region.html",
+			"logToConsole",
+			"scrollNext",
+			"areaSelected",
+			"postMessage",
+			"FireShotSelection",
 			"getMerged",
 			"dataToBlob",
 			"localstorage",
@@ -1020,49 +1017,16 @@
 			"groupContainsUser",
 			"rowTemplate",
 			"masterInit",
-			".on",
-			"get_login",
-			"login",
-			"init",
-			"model.init(",
-			".init(",
-			"init",
-			"Tree_controller",
-			"\"send",
-			"processAllFields",
-			"metadataAddField",
-			"metadata_list",
-			"Select from existing",
-			"send",
-			"Send",
-			"migra",
-			"total",
-			"totalcn",
-			"stats",
-			"events.all",
-			"events",
-			"appro",
-			"orderBy",
-			"dashboard",
-			"dash_manager",
-			"initso",
-			"normalizeWheelEvent",
-			"refresh",
-			"$scope.refresh",
-			"model.in",
-			"get_doc",
-			"initTabsTemplates",
-			"saveView",
-			"getFolders",
-			"saveTemplate",
-			"addProperties"
+			".on"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"",
+			"CodeNinjas",
 			"',",
 			"'",
 			" t-icon",
@@ -1129,14 +1093,42 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "/Users/akve/work/volodarik/mak/manifest.json",
 					"settings":
 					{
-						"buffer_size": 4356,
+						"buffer_size": 1035,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								694,
+								694
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 18.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"settings":
+					{
+						"buffer_size": 1556,
 						"regions":
 						{
 							"match":
@@ -1145,72 +1137,28 @@
 								"regions":
 								[
 									[
-										236,
-										240
+										229,
+										233
 									],
 									[
-										502,
-										506
+										447,
+										451
 									],
 									[
-										882,
-										893
+										697,
+										701
 									],
 									[
-										1185,
-										1196
+										980,
+										984
 									],
 									[
-										1562,
-										1569
+										1236,
+										1244
 									],
 									[
-										1903,
-										1910
-									],
-									[
-										2160,
-										2167
-									],
-									[
-										2501,
-										2508
-									],
-									[
-										2834,
-										2841
-									],
-									[
-										3091,
-										3098
-									],
-									[
-										3303,
-										3310
-									],
-									[
-										3654,
-										3666
-									],
-									[
-										3894,
-										3906
-									],
-									[
-										4015,
-										4027
-									],
-									[
-										4056,
-										4068
-									],
-									[
-										4154,
-										4166
-									],
-									[
-										4212,
-										4224
+										1443,
+										1451
 									]
 								],
 								"scope": ""
@@ -1219,14 +1167,14 @@
 						"selection":
 						[
 							[
-								4058,
-								4058
+								1501,
+								1513
 							]
 						],
 						"settings":
 						{
 							"detect_indentation": false,
-							"output_tag": 5,
+							"output_tag": 2,
 							"result_base_dir": "",
 							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
 							"result_line_regex": "^ +([0-9]+):",
@@ -1234,116 +1182,87 @@
 							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1485.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "region.js",
-					"settings":
-					{
-						"buffer_size": 1171,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								777,
-								777
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 495.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "settings.js",
+					"file": "/Users/akve/work/volodarik/mak/fsCaptured.html",
 					"settings":
 					{
-						"buffer_size": 452,
+						"buffer_size": 10211,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								446,
-								446
+								1051,
+								1051
 							]
 						],
 						"settings":
 						{
-							"auto_name": "",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 325.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "region.inject.js",
+					"file": "/Users/akve/work/volodarik/mak/fsOptions.html",
 					"settings":
 					{
-						"buffer_size": 970,
+						"buffer_size": 6265,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								676,
-								676
+								6226,
+								6226
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3003.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "/Users/akve/work/volodarik/ext/manifest.json",
+					"file": "/Users/akve/work/volodarik/mak/fsPopup.html",
 					"settings":
 					{
-						"buffer_size": 847,
+						"buffer_size": 2687,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								727,
-								727
+								648,
+								648
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 3,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -1354,195 +1273,54 @@
 				},
 				{
 					"buffer": 5,
-					"file": "network.js",
+					"file": "/Users/akve/work/volodarik/mak/scripts/fsContent.js",
 					"settings":
 					{
-						"buffer_size": 392,
+						"buffer_size": 16354,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								56,
-								68
+								10562,
+								10570
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 5201.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "preview.js",
+					"file": "/Users/akve/work/volodarik/mak/scripts/fsOptions.js",
 					"settings":
 					{
-						"buffer_size": 6144,
+						"buffer_size": 4358,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1105,
-								1105
+								1965,
+								1965
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/Users/akve/work/volodarik/ext/popup.html",
-					"settings":
-					{
-						"buffer_size": 1200,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1019,
-								1027
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "popup.js",
-					"settings":
-					{
-						"buffer_size": 4223,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1132,
-								1132
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/Users/akve/work/volodarik/ext/settings.html",
-					"settings":
-					{
-						"buffer_size": 637,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								603,
-								603
-							]
-						],
-						"settings":
-						{
-							"auto_name": "settings",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "/Users/akve/work/volodarik/ext/preview.html",
-					"settings":
-					{
-						"buffer_size": 3058,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1281,
-								1288
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 159.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "/Users/akve/work/volodarik/ext/post2.php",
-					"settings":
-					{
-						"buffer_size": 1629,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								492,
-								492
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1368.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

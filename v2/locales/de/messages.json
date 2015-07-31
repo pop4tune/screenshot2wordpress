@@ -1,0 +1,391 @@
+﻿{
+	"application_title": {
+		"message": "Erfassen Webseite Screenshot - CodeNinjas",
+		"description": "The title of the application, displayed in the web store."
+	},
+	
+	"application_description": {
+		"message": "Erfassen Sie die Homepage Screenshots,bearbeiten und speichern. Hochladen,Drucken,senden,um Photoshop,Zwischenablage oder per Email",
+		"description": "The description of the application, displayed in the web store."
+	},
+	
+	"action_capture_entire" : {
+		"message": "Ganze Seite aufnehmen und", 
+		"description": "First part of the command in the popup menu: Capture entire page and (Edit, Save, Print, etc)"
+	},	
+	
+	"action_capture_visible" : {
+		"message": "Sichtbaren Bereich aufnehmen und",
+		"description":"First part of the command in the popup menu: Capture visible part and (Edit, Save, Print, etc)"
+	},
+	
+	"action_capture_selection" : {
+		"message": "Ausgewählten Bereich aufnehmen und",
+		"description": "First part of the command in the popup menu: Capture selection and (Edit, Save, Print, etc)"
+	},
+	
+	"action_capture_entire_lite" : {
+		"message": "Ganze Seite aufnehmen",
+		"description": ""
+	},
+
+	"action_capture_visible_lite" : {
+		"message": "Sichtbaren Bereich aufnehmen",
+		"description":""
+	},
+
+	"action_capture_selection_lite" : {
+		"message": "Ausgewählten Bereich aufnehmen",
+		"description": ""
+	},
+	
+	"action_capture_browser" : {
+		"message": "Browser Fensterinhalt aufnehmen und",
+		"description": "First part of the command in the popup menu: Capture browser window and (Edit, Save, Print, etc)"
+	},
+	
+	"action_resume" : {
+		"message": "Bearbeitung fortsetzen",
+		"description": "Popup menu command, opening editor and previous capture"
+	},
+	
+	"action_open_file" : {
+		"message": "Datei öffnen",
+		"description": "Popup menu command, loading file into CodeNinjas"
+	},
+	
+	"action_open_clipboard" : {
+		"message": "Aus Zwischenablage öffnen",
+		"description": "Popup menu command, opens editor and captures the image from clipboard"
+	},
+
+	"action_options" : {
+		"message": "Einstellungen",
+		"description": "Popup menu command, opens options page"
+	},	
+	
+	"action_register" : {
+		"message": "Registrierung",
+		"description": "Popup menu command, registering the Pro version"
+	},
+	
+	"action_enter_license" : {
+		"message": "License Key eingeben",
+		"description": "Popup menu command, opens dialog to enter the licensing information"
+	},
+	
+	"action_switch_pro" : {
+		"message": "Zu Pro wechseln",
+		"description": "Popup menu command, switches CodeNinjas into Pro mode"
+	},
+	
+	"action_view_demo" : {
+		"message": "Demo anzeigen",
+		"description": "Popup menu command, opens web page in a new tab with a Flash demo"
+	},
+	
+	"action_support" : {
+		"message": "Unterstützung",
+		"description": "Popup menu command, opens web page in a new tab with the support forum"
+	},
+	
+	"action_api" : {
+		"message": "CodeNinjas API",
+		"description": "Popup menu command, opens web page in a new tab with some info about CodeNinjas API"
+	},
+	
+	"action_edit" : {
+		"message": "Bearbeiten",
+		"description": "Popup menu command, captures web page and opens editor"
+	},
+	
+	"action_save" : {
+		"message": "Speichern",
+		"description": "Popup menu command, captures web page and saves it to disk as image file"
+	},
+	
+	"action_save_pdf" : {
+		"message": "Als PDF speichern",
+		"description": "Popup menu command, captures web page and saves it as PDF"
+	},
+	
+	"action_copy" : {
+		"message": "In Zwischenablage kopieren",
+		"description": "Popup menu command, captures web page and places it into clipboard as bitmap"
+	},
+	
+	"action_email" : {
+		"message": "E-Mail senden",
+		"description": "Popup menu command, captures web page and sends it via email"
+	},
+	
+	"action_external" : {
+		"message": "In externem Editor öffnen",
+		"description": "Popup menu command, captures web page and opens it in a third-party editor"
+	},
+	
+	"action_onenote" : {
+        "message": "An OneNote senden",
+        "description": "Popup menu command, captures web page and opens it in MS OneNote"
+    },
+	
+	"action_upload" : {
+		"message": "Hochladen",
+		"description": "Popup menu command, captures web page and uploads it to image hosting engine"
+	},
+	
+	"action_print" : {
+		"message": "Drucken",
+		"description": "Popup menu command, captures web page and sends it to printer"
+	},
+	
+	"options_label_CodeNinjas_options" : {
+		"message": "CodeNinjas optionen",
+		"description": "Options page, main header of the dialog"
+	},
+	
+	"options_label_capturing" : {
+		"message": "Capturing",
+		"description": "Options page, label of the Capturing section"
+	},
+	
+	"options_label_editor_options" : {
+		"message": "Editor optionen",
+		"description": "Options page, label of the Editor options section"
+	},
+	
+	"options_label_hotkey" : {
+		"message": "Hotkey",
+		"description": "Options page, label of the Hotkey section"
+	},
+	
+	"options_label_specify_resizing_options" : {
+		"message": "Geben Größenanpassung und Sounds.",
+		"description": "Options page, label"
+	},
+	
+	"options_label_specify_editor_options" : {
+		"message": "Geben Editor und sparen, Dateibenennung Vorlieben, Arten, etc.",
+		"description": "Options page, label"
+	},
+	
+	"options_label_specify_hotkey" : {
+		"message": "Geben Sie die Tastenkombination zum CodeNinjas starten:",
+		"description": "Options page, label"
+	},
+	
+	"options_button_setup" : {
+		"message": "Klicken sie, um das setup",
+		"description": "Options page, button caption, opens additional dialog"
+	},
+	
+	"options_button_apply" : {
+		"message": "Anwenden",
+		"description": "Options page, button caption, applies settings"
+	},
+	
+	"options_button_save_close" : {
+		"message": "Speichern und schließen",
+		"description": "Options page, button caption, stores settings and closes dialog"
+	},
+	
+	"action_license_info" : {
+		"message": "Lizenzierung info...",
+		"description": "Popup menu command, opens licensing info if CodeNinjas is Pro"
+	},
+	
+	"action_about" : {
+		"message": "Über das Programm...",
+		"description": "Popup menu command, opens window about CodeNinjas"
+	},
+	
+	"options_label_file_settings" : {
+		"message": "Datei Einstellungen",
+		"description": ""
+	},
+	
+	"options_label_save_image_as" : {
+		"message": "Bild speichern als:",
+		"description": ""
+	},
+	
+	"options_label_default_filename_template" : {
+		"message": "Standard Dateinamen Template:",
+		"description": ""
+	},
+	
+	"options_label_template_url" : {
+		"message": "Seiten URL",
+		"description": ""
+	},
+	
+	"options_label_template_title" : {
+		"message": "Page Titel",
+		"description": ""
+	},
+	
+	"options_label_template_year" : {
+		"message": "Jahr",
+		"description": ""
+	},
+	
+	"options_label_template_month" : {
+		"message": "Monat",
+		"description": ""
+	},
+	
+	"options_label_template_day" : {
+		"message": "Tag",
+		"description": ""
+	},
+	
+	"options_label_template_hour" : {
+		"message": "Stunde",
+		"description": ""
+	},
+	
+	"options_label_template_minutes" : {
+		"message": "Protokoll",
+		"description": ""
+	},
+	
+	"options_label_template_seconds" : {
+		"message": "Sekunden",
+		"description": ""
+	},
+	
+	"options_label_template_pad_1" : {
+		"message": "Pad Nummer mit",
+		"description": ""
+	},
+	
+	"options_label_template_pad_2" : {
+		"message": "nullen",
+		"description": ""
+	},
+	
+	"options_label_template_limit_1" : {
+		"message": "Grenzlänge der Dateinamen um",
+		"description": ""
+	},
+	
+	"options_label_template_limit_2" : {
+		"message": "symbole",
+		"description": ""
+	},
+	
+	
+	
+	
+	
+	
+	"options_link_filename_template_settings" : {
+		"message": "Zeige Dateinamen Vorlageneinstellungen ...",
+		"description": ""
+	},
+	
+	"options_link_filename_template_settings_hide" : {
+		"message": "Dateiname Vorlageneinstellungen ausblenden ...",
+		"description": ""
+	},
+	
+	"options_label_last_action_hotkey" : {
+		"message": "Last verwendet Aktio",
+		"description": ""
+	},
+	
+	"options_label_and" : {
+		"message": "und",
+		"description": ""
+	},
+	
+	"captured_save_panel_title" : {
+		"message": "Save Screenshot",
+		"description": ""
+	},
+	
+	"captured_save_as_image" : {
+		"message": "Speichern als Bild",
+		"description": ""
+	},
+	
+	"captured_save_as_pdf" : {
+		"message": "Speichern als PDF",
+		"description": ""
+	},
+	
+	"captured_copy_clipboard" : {
+		"message": "In Zwischenablage kopieren",
+		"description": ""
+	},
+	
+	"captured_print" : {
+		"message": "Drucken",
+		"description": ""
+	},
+	
+	"captured_save_as_image_button" : {
+		"message": "Speichern als Bild",
+		"description": ""
+	},
+	
+	"captured_copy_clipboard_learn_button" : {
+		"message": "Erfahren Sie, wie ...",
+		"description": ""
+	},
+	
+	"captured_print_button" : {
+		"message": "Drucken",
+		"description": ""
+	},
+	
+	"action_micsellaneous" : {
+		"message": "Verschiedenes",
+		"description": ""
+	},
+
+	"options_capture_browser" : {
+		"message": "Aufnahme Browserfenster",
+		"description": ""
+	},
+
+	"action_install_native" : {
+		"message": "Installieren Sie erweiterte Funktionen",
+		"description": ""
+	},
+	
+	"captured_upgrade_link_1" : {
+		"message": "Upgrade zu bearbeiten, Advanced Print / PDF speichern, Upload, E-Mail, um OneNote oder Export senden ...",
+		"description": ""
+	},
+	
+	"captured_upgrade_link_2" : {
+		"message": "Upgrade auf CodeNinjas Pro",
+		"description": ""
+	},
+	
+	"captured_upgrade_link_3" : {
+		"message": "Ich war mit einer anderen Version von CodeNinjas",
+		"description": ""
+	},
+	
+	"captured_upgrade_link_4" : {
+		"message": "Kann ich es zurück?",
+		"description": ""
+	},
+	
+	"captured_setup_hotkeys" : {
+		"message": "Setup Hotkeys und Dateieinstellungen ...",
+		"description": ""
+	},
+	
+	"captured_recommend_us" : {
+		"message": "Empfehlen CodeNinjas",
+		"description": ""
+	},
+	
+	"void" : {
+		"message": "",
+		"description": "this is a void entry"
+	}
+}
