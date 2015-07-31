@@ -333,7 +333,7 @@ function getMenuSettings(callback)
 					
 					"mnuCaptureVisibleLite"		: unsupported ? "disabled" : "visible",
 					"mnuCaptureEntireLite"		: unsupported ? "disabled" : "visible",
-					"mnuCaptureSelectionLite"	: unsupported ? "disabled" : "visible",
+					"mnuCaptureSelectionLite"	: "visible",
 					"mnuPreferencesLite"		: fLite ? "visible" : "hidden",
 					
 					"mnuViewDemo"			: fLite ? "hidden" : "visible",

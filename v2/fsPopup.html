@@ -12,96 +12,22 @@
 
 </head>
 
-<body style="overflow:visible;width:300px;height:300px;">
+<body style="overflow:visible;width:500px;height:300px;">
 
 <div id="login">
     Login: <br>
   <input id="login" type="text"><br>
   Password: <br>
   <input type="password" id="passwd"><br>
-    <button id="tooltip">Save</button><button id="cancel">Cancel</button>
+    <button id="savePreferences">Save</button><button id="cancel">Cancel</button>
 </div>
 
-<div id="mnuMain" style="display:none">
-<div>
- <ul>
-   <li id="mnuQuickLaunch"><div class="left"><img src="images/quicklaunch.png"><span id="spnLastAction">And:</span></div><div class="right"><span id="spnShortcut">Ctrl+Alt+Z</span></div></li>
- </ul>
-</div>
-<div class="separator"></div>
-<div id="divCaptureTools">
- <ul>
-   <li id="mnuCaptureEntire"><div class="left"><img src="images/capture_mode_full.png"><span >_Capture entire page and</span> ...</div><div class="right"><img src="images/arrow.png"></div></li>
-   <li id="mnuCaptureVisible"><div class="left"><img src="images/capture_mode_visible.png"><span >_Capture visible part and</span> ...</div><div class="right"><img src="images/arrow.png"></div></li>
-   <li id="mnuCaptureSelection"><div class="left"><img src="images/capture_mode_selected.png"><span >_Capture selection and</span> ...</div><div class="right"><img src="images/arrow.png"></div></li>
-   <li id="mnuCaptureBrowser"><div class="left"><img src="images/capture_mode_browser.png"><span >_Capture browser window and</span> ...</div><div class="right"><img src="images/arrow.png"></div></li>
- </ul> 
-</div>
-<div id="divCaptureToolsLite">
- <ul>
-   <li id="mnuCaptureEntireLite"><div class="left"><img src="images/capture_mode_full.png"><span >_Capture entire page</span></div><div class="right"><span id="spnShortcutEntire">Ctrl+Alt+Z</span></div></li>
-   <li id="mnuCaptureVisibleLite"><div class="left"><img src="images/capture_mode_visible.png"><span >_Capture visible part</span></div><div class="right"><span id="spnShortcutVisible">Ctrl+Alt+Z</span></div></li>
-   <li id="mnuCaptureSelectionLite"><div class="left"><img src="images/capture_mode_selected.png"><span >_Capture selection</span></div><div class="right"><span id="spnShortcutSelection">Ctrl+Alt+Z</span></div></li>
- </ul> 
-</div>
-<div class="separator"></div>
-<div>
- <ul>
-   <li id="mnuResume"><div class="left"><span >_Resume editing</span> ...</div></li>
-   <li id="mnuOpenFile"><div class="left"><span >_Open file</span> ...</div></li>
-   <li id="mnuOpenClipboard"><div class="left"><span >_Open from clipboard</span> ...</div></li>
- </ul> 
-</div>
-<div id="sepEditor" class="separator"></div>
 
-<div>
- <ul>
- <li id="mnuPreferencesLite"><div class="left"><img src="images/options.png"><span >_Options</span> ...</div></li>
-   <li id="mnuMiscellaneousFolder"><div class="left"><span >Miscellaneous</span> ...</div><div class="right"><img src="images/arrow.png"></div></li>
-   <div id="sepAdvanced" class="separator"></div>
-   <li id="mnuUpgrade" title="Switch your CodeNinjas to powerful Pro edition"><div class="left"><img src="images/rocket.png"><span >_Switch to Pro</span>!</div></li>
-   <li id="mnuCodeNinjasNative"><div class="left"><img src="images/plus.png"><span >Advanced functions</span> ...</div></li>
-   <li id="mnuRegister"><div class="left"><span >_Register</span> ...</div></li>
-   <li id="mnuLicenseInfo"><div class="left"><span >_License Info</span></div></li>
-  <!-- <li id="mnuCapPreferences"><div class="left">Capture options...</li>-->
- </ul>
-</div>
-</div>
+<!-- NOW THE REAL LIFE --> 
 
-<div id="mnuTools" style="display:none; position:absolute; top:0; padding:2px; background:#fff; 
-border-radius: 5px 5px; border:1px #b2b2b2 solid">
-<div>
-  <ul rel="mnuTools">
-   <li id="mnuEdit" value="Edit"><div class="left"><img src="images/bullet.png"><span >_Edit</span></div></li>
-   <li id="mnuSave" value="Save"><div class="left"><img src="images/bullet.png"><span >_Save</span></div></li>
-   <li id="mnuSavePDF" value="Save as PDF"><div class="left"><img src="images/bullet.png"><span >_Save as PDF</span></div></li>
-   <li id="mnuSendOneNote" value="Send to OneNote"><div class="left"><img src="images/bullet.png"><span >Send to One_Note</span></div></li>
-   <li id="mnuUpload" value="Upload"><div class="left"><img src="images/bullet.png"><span >_Upload</span></div></li>
-   <li id="mnuPrint" value="Print"><div class="left"><img src="images/bullet.png"><span >_Print</span></div></li>
-   <li id="mnuClipboard" value="Copy to Clipboard"><div class="left"><img src="images/bullet.png"><span >_Copy to Clipboard</span></div></li>
-   <li id="mnuEmail" value="E-Mail"><div class="left"><img src="images/bullet.png"><span >_E-Mail</span></div></li>
-   <li id="mnuExtEdit" value="Open in External Editor"><div class="left"><img src="images/bullet.png"><span >_Open in External Editor</span></div></li>
- </ul> 
-</div>
-</div>
-
-<div id="mnuMiscellaneous" style="display:none; position:absolute; top:0; padding:2px; background:#fff; 
-border-radius: 5px 5px; border:1px #b2b2b2 solid">
-<div>
-  <ul rel="mnuMiscellaneous">
+<div id="main2">
+ <li id="mnuCaptureSelectionLite"><div class="left"><img src="images/capture_mode_selected.png"><span >_Capture selection</span></div><div class="right"><span id="spnShortcutSelection">Ctrl+Alt+Z</span></div></li>
   <li id="mnuPreferences"><div class="left"><img src="images/options.png"><span >_Options</span> ...</div></li>
-  <div id="sepSupport" class="separator"></div>
-   <li id="mnuEnterLicense"><div class="left"><span >_Enter license info</span> ...</div></li>
-   <li id="mnuViewDemo"><div class="left"><span >_View demo</span></div></li>
-   <li id="mnuSupport"><div class="left"><span >_Support</span></div></li>
-   <li id="mnuAPI"><div class="left"><span >_CodeNinjas API</span></div></li>
-   <div id="sepSupport" class="separator"></div>
-   <li id="mnuAbout"><div class="left"><span >_About...</span></div></li>
-
-<!--   <li id="mnuUniblue"><div class="left">Boot PC Performance...</div></li>-->
-
- </ul> 
-</div>
 </div>
 
 </body>

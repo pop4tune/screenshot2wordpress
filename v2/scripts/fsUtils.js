@@ -55,7 +55,7 @@ const cDefaultShortcutBrowserAction		= 0;
 const cDefaultTemplate			 = "CodeNinjas Capture - %t - %u";
 
 
-var isDebug = localStorage[cDebugPref] !== undefined;
+var isDebug = true;//localStorage[cDebugPref] !== undefined;
 var extensionId = chrome.i18n.getMessage('@@extension_id');
 //isDebug = extensionId == "ljhbgpplnapkahgkchjfeednacjockbi";
 logToConsole("Extension ID: " + extensionId);

@@ -1,8 +1,10 @@
 var capMode;
 var clickedElem;
 
+
 function switchPane(evt, id)
 {
+	return;
 	var menu2 = document.getElementById(id);
 	menu2.style.display = "block";
 	menu2.style.right = "5px"; 
@@ -11,6 +13,7 @@ function switchPane(evt, id)
 
 function updateLastAction()
 {
+	return;
 	var txt = getExtension().getLADescription();
 	
 	document.getElementById("spnLastAction").innerHTML = txt;
@@ -24,9 +27,10 @@ function updateLastAction()
 function click(obj, evt)
 {
 	if (obj.className == "disabled") return;
-	
 	clickedElem = obj;
-	
+	//var bkg = chrome.extension.getBackgroundPage();
+	//bkg.console.log('foo');
+
 	if (obj.id != "mnuCaptureEntire" && obj.id != "mnuCaptureVisible" && obj.id != "mnuCaptureSelection" && obj.id != "mnuCaptureBrowser" && obj.id != "mnuMiscellaneousFolder")
 		window.close();
 		
@@ -109,8 +113,8 @@ function load()
 		}
 	} 
 	
-	updateLastAction();
-	updateAccessibility();
+//	updateLastAction();
+//	updateAccessibility();
 }
 
 function updateAccessibility()

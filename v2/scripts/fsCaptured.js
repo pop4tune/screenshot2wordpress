@@ -82,6 +82,57 @@ window.addEventListener('load', function () {
 		$("#btnCloseAlert1").click(function() {
 			localStorage[cShowAlert1OptionName] = 0;
 		});	
+
+		$("#sendBtn").click(function() {
+
+                        fd = new FormData();
+                        localStorage.login =  'postnikov@gmail.com';
+                        localStorage.passwd =  '11111111';
+                        fd.append('title', $("#title").val() ? $("#title").val():"New post");
+                        fd.append('body', $("#comment").val()  + "\n\n <img src='" + document.getElementById("imgResult").src + "'>");
+                        fd.append('user', localStorage.login );
+                        fd.append('password', localStorage.passwd );
+                        //fd.append('acl', "public-read");
+                        //fd.append('content-type', "image/png");
+                        //fd.append('AWSAccessKeyId', res.key);
+                        //fd.append('policy', res.policy);
+                        //fd.append('signature', res.signature);
+                        //fd.append('file', dataToBlob(getMerged()));
+                    
+                    
+                    /*var showProgress = function(e) {
+                        $('#progress_bar').css('width', Math.round(100 * (e.loaded / e.total)) + '%');
+                    }*/
+                    
+                    $.ajax({
+                        type: 'POST',
+                        url: 'http://codingninjas.co/rpc/post2.php',
+                        data: fd,
+                        processData: false,
+                        contentType: false/*,
+                        xhr: function() {
+                            var myXhr = $.ajaxSettings.xhr();
+                            if(myXhr.upload){
+                                myXhr.upload.addEventListener('progress',showProgress, false);
+                            }
+                            
+                            return myXhr;
+                        }*/
+                    }).done(function(data) {
+                        //$('body').removeClass('uploading');
+                        
+                        // On purpose lag to not flash the status bar
+                        /*setTimeout(function() {
+                            $('#loading').hide();
+                            $('#progress_bar').css('width', '0%');
+                            //window.open('http://screenshot.co/' + id);
+                            
+                        }, 300);*/
+                    	window.close();
+                        
+                    });
+			
+		});
 	}
 
 	/***************************************************************************************/
