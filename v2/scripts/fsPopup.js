@@ -95,11 +95,7 @@ function mouseOver(obj, evt)
 
 function load()
 {
-	try
-	{
-		i18nPrepare();
-	} 
-	catch (e) {logError(e.message);}
+	//console.log("!",$);
 	
 	var itr = document.createNodeIterator(document.documentElement, NodeFilter.SHOW_ELEMENT, null, false);
 	var currentNode;  
@@ -112,9 +108,62 @@ function load()
 			currentNode.onmouseover = function(evt){mouseOver(this, evt);};
 		}
 	} 
+
+	$("#logout").click(function(){
+        localStorage.login = "";
+        localStorage.passwd =  "";
+        localStorage.settings = "";
+        showLogin();
+	});
+	if (!localStorage['login']) {
+		showLogin();
+	} else {
+		$("#connected").html("Connected az " + localStorage['login']);
+
+	}
 	
 //	updateLastAction();
 //	updateAccessibility();
+}
+
+function showLogin(){
+	$("#main2").hide();
+	$("#loginDiv").show(500);
+
+	$("#savePreferences").click(function(){
+        fd = new FormData();
+        fd.append('user', $("#login").val() );
+        fd.append('password', $("#passwd").val() );
+
+        $.ajax({
+            type: 'POST',
+            url: 'http://codingninjas.co/rpc/post.php',
+            data: fd,
+            processData: false,
+            contentType: false
+        }).done(function(data) {
+        	$("#errors").html(data);
+        	if (data.indexOf("SUCCESS") == 0) {
+		        localStorage.login = $("#login").val();
+		        localStorage.passwd =  $("#passwd").val();
+		        localStorage.settings = data;
+		        $("#errors").hide();
+		        showMain(true);
+        	} else {
+        		$("#errors").show();
+        	}
+        });
+	});
+}
+
+function showMain(showConnectedOK){
+	$("#loginDiv").hide(500);
+	$("#main2").show(500);
+	if (showConnectedOK) {
+		$("#connected").show();
+
+	}
+	$("#connected").html("Connected as " + localStorage['login']);
 }
 
 function updateAccessibility()

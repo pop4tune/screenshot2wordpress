@@ -4,6 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <script src="scripts/fsUtils.js"></script>
+  <script src="scripts/3p/jquery-2.1.1.min.js"></script>
   <script src="scripts/fsPopup.js"></script>
   <title></title>
 
@@ -13,22 +14,27 @@
 </head>
 
 <body style="overflow:visible;width:500px;height:300px;">
+<div id="container">
+  <div id="loginDiv" style="display:none;" >
+      Login: <br>
+    <input id="login" type="text"><br>
+    Password: <br>
+    <input type="password" id="passwd"><br>
+      <button id="savePreferences">Save</button><!--<button id="cancel">Cancel</button>-->
+      <div id="errors" style="border:1px solid red;display:none;">Wrong login or password</div>
+  </div>
 
-<div id="login">
-    Login: <br>
-  <input id="login" type="text"><br>
-  Password: <br>
-  <input type="password" id="passwd"><br>
-    <button id="savePreferences">Save</button><button id="cancel">Cancel</button>
+
+  <!-- NOW THE REAL LIFE --> 
+
+  <div id="main2">
+
+    <div id="connected" style="display:block">
+      Connected as...
+    </div>
+   <li id="mnuCaptureSelectionLite"><div class="left"><img src="images/capture_mode_selected.png"><span >_Capture selection</span></div><div class="right"><span id="spnShortcutSelection">Ctrl+Alt+Z</span></div></li>
+    <li id="logout"><div class="left"><img src="images/options.png"><span >Log out</span> ...</div></li>
+  </div>
 </div>
-
-
-<!-- NOW THE REAL LIFE --> 
-
-<div id="main2">
- <li id="mnuCaptureSelectionLite"><div class="left"><img src="images/capture_mode_selected.png"><span >_Capture selection</span></div><div class="right"><span id="spnShortcutSelection">Ctrl+Alt+Z</span></div></li>
-  <li id="mnuPreferences"><div class="left"><img src="images/options.png"><span >_Options</span> ...</div></li>
-</div>
-
 </body>
 </html>
