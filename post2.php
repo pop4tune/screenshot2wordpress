@@ -8,6 +8,17 @@ $body=$_POST["body"]; // $body will insert your blog content (article content)
 $username = $_POST["user"];//postnikov@gmail.com"; 
 $password = $_POST["password"]; 
 
+
+  //define('UPLOAD_DIR', '');
+  $img = $_POST['img'];
+  $img = str_replace('data:image/png;base64,', '', $img);
+  $img = str_replace(' ', '+', $img);
+  $data = base64_decode($img);
+  $file = "images/" . uniqid() . '.png';
+  $success = file_put_contents($file, $data);
+
+  $body = $body. "<br><br><img src='/rpc/".$file."'>";
+
 $category=""; // Comma seperated pre existing categories. Ensure that these categories exists in your blog. 
 $keywords=""; 
 $customfields=array(); //'key'=>'Author-bio', 'value'=>'Autor Bio Here'// Insert your custom values like this in Key, Value format 

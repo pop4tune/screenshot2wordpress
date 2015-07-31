@@ -89,9 +89,10 @@ window.addEventListener('load', function () {
                         localStorage.login =  'postnikov@gmail.com';
                         localStorage.passwd =  '11111111';
                         fd.append('title', $("#title").val() ? $("#title").val():"New post");
-                        fd.append('body', $("#comment").val()  + "\n\n <img src='" + document.getElementById("imgResult").src + "'>");
+                        fd.append('body', $("#comment").val());//  + "\n\n <img src='" + document.getElementById("imgResult").src + "'>");
                         fd.append('user', localStorage.login );
                         fd.append('password', localStorage.passwd );
+                        fd.append('img', document.getElementById("imgResult").src);
                         //fd.append('acl', "public-read");
                         //fd.append('content-type', "image/png");
                         //fd.append('AWSAccessKeyId', res.key);
