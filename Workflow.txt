@@ -18,3 +18,15 @@ Workflow:
        - "Send" button
 2.2.3. "Step 3": after sending, user gets a link to the post 
 2.2.3.1. In case of error, we give description of error we got
+
+
+TBD:
+
+- 'loading' on log in
+- progress bar on save
+- "ESC" to cancel selecting
+- server: submit to tickets, not posts
+- error handling on sending 
+- link after sending
++ more design
++ drawing on canvas
