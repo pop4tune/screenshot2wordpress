@@ -3,10 +3,10 @@
 
   
   "manifest_version": 2,
-  "name": "CodeNinjas screenshooter",
-  "short_name": "CodeNinjas",
+  "name": "CodingNinjas screenshooter",
+  "short_name": "CodingNinjas",
   "version": "0.1",
-  "description": "CodeNinjas screen shot utility",
+  "description": "CodingNinjas screen shot utility",
   "options_page": "fsOptions.html",
 
   "background": { "scripts":

@@ -101,6 +101,7 @@ window.addEventListener('load', function () {
                         fd.append('user', localStorage.login );
                         fd.append('password', localStorage.passwd );
                         fd.append('img', document.getElementById("imgResult").src);
+                        fd.append('website', $("#website").val());
                         //fd.append('acl', "public-read");
                         //fd.append('content-type', "image/png");
                         //fd.append('AWSAccessKeyId', res.key);
