@@ -23,10 +23,11 @@ Workflow:
 TBD:
 
 - 'loading' on log in
-- progress bar on save
++ progress bar on save
 - "ESC" to cancel selecting
 - server: submit to tickets, not posts
 - error handling on sending 
 - link after sending
-+ more design
-+ drawing on canvas
+- more design
+- drawing on canvas
+- clean up from original

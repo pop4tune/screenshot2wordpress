@@ -23,7 +23,82 @@
 		.hiddenInitially {display:none !important}
 		
 		#logo {vertical-align:middle; margin-right: 15px;}
+
+    body.upload {
+      cursor: progress;
+    }
+
+
+    #loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    top: 0px;
+    left: 0px;
+    z-index: 1000000;
+    display: none;
+}
+
+#progress {
+    height: 100px;
+    width: 60%;
+    margin: -50px auto 0px auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+    
+}
+
+#progress_bar {
+    width: 1%;
+    height: 100%;
+    background-color: rgba(237, 71, 50, 0.9);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    -webkit-transition: width 300ms linear;
+}
 		
+    #progress {
+    height: 100px;
+    width: 60%;
+    margin: -50px auto 0px auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+    
+}
+
+    #progress_result {
+    height: 100px;
+    width: 60%;
+    margin: -50px auto 0px auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+    
+}
     </style>
 
 </head>
@@ -31,6 +106,17 @@
 <body>
     <!-- Page Content -->
     <div class="container" style="display:none">
+
+        <div id="loading">
+            <div id="progress">
+                <div id="progress_bar"></div>
+                Saving your screenshot...
+            </div>
+            <div id="progress_result">
+                Saved. See it on
+            </div>
+        </div>
+
 
         <!-- Portfolio Item Heading -->
         <div class="row">
@@ -59,9 +145,13 @@
                     <div class="row">
                         <div class="col-md-12">
                             Subject:
-                            <input type="text" id="title" style="width:100%" placeholder="Subject">
+                            <input type="text" id="title" style="width:100%" placeholder="Subject"><br><br>
+                            Website: 
+                            <select id="website" style="width:100%">
+                                <option value="">Select site</option>
+                            </select><br><br>
                             Comment:
-                            <textarea  id="comment" style="width:100%;height:150px" placeholder="Comment"></textarea>
+                            <textarea  id="comment" style="width:100%;height:150px" placeholder="Comment"></textarea><br><br>
                             <div class="fsButton"><button type="button" class="fsButton btn btn-default btn-sm active" id="sendBtn"><span>Send</span></button></div>
 
                             <!--<div class="fsButton" style="float:right">

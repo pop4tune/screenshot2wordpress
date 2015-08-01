@@ -97,7 +97,7 @@ function load()
 {
 	//console.log("!",$);
 	
-	var itr = document.createNodeIterator(document.documentElement, NodeFilter.SHOW_ELEMENT, null, false);
+	/*var itr = document.createNodeIterator(document.documentElement, NodeFilter.SHOW_ELEMENT, null, false);
 	var currentNode;  
    
 	while (currentNode = itr.nextNode()) 
@@ -107,7 +107,13 @@ function load()
 			currentNode.onclick = function(evt){evt.preventDefault(); click(this, evt); return true;};
 			currentNode.onmouseover = function(evt){mouseOver(this, evt);};
 		}
-	} 
+	} */
+
+	$("#mnuCaptureSelectionLite").click(function(){
+		var ext = getExtension();
+		window.close();
+		ext.capturePage(cActionEdit ,cModeSelected);
+	})
 
 	$("#logout").click(function(){
         localStorage.login = "";
@@ -115,10 +121,17 @@ function load()
         localStorage.settings = "";
         showLogin();
 	});
+
+	$("#settings").click(function(){
+		var ext = getExtension();
+		window.close();
+	       ext.openExtensionPreferences();
+	});
+
 	if (!localStorage['login']) {
 		showLogin();
 	} else {
-		$("#connected").html("Connected az " + localStorage['login']);
+		$("#connected").html("Connected as <b>" + localStorage['login'] + "</b>");
 
 	}
 	
@@ -134,6 +147,9 @@ function showLogin(){
         fd = new FormData();
         fd.append('user', $("#login").val() );
         fd.append('password', $("#passwd").val() );
+        $('body').addClass('upload');
+        $('#loading').show();
+
 
         $.ajax({
             type: 'POST',
@@ -142,6 +158,9 @@ function showLogin(){
             processData: false,
             contentType: false
         }).done(function(data) {
+            $('body').removeClass('upload');
+            $('#loading').hide();
+            $('#progress').hide();
         	$("#errors").html(data);
         	if (data.indexOf("SUCCESS") == 0) {
 		        localStorage.login = $("#login").val();

@@ -379,8 +379,6 @@ function capturePage(Action, Mode)
 
 	chrome.windows.getLastFocused(function(window) {
 		
-		gaTrack('UA-1025658-9', 'CodeNinjas.com', 'ch-captured-' + Mode); 
-		gaTrack('UA-1025658-9', 'CodeNinjas.com', getActionLocaleId(Action)); 
 		
 		chrome.tabs.getSelected(null, function(tab)	{
 			tabId = tab.id;
@@ -628,6 +626,7 @@ var mnuVisibleEdit, mnuVisibleSave, mnuVisibleSavePDF, mnuVisibleSendOneNote, mn
 
 function updateContextMenu()
 {
+	return; // no context menu please
 	if (fEntered) return;
 	fEntered = true;
 	//logToConsole("updateContextMenu");

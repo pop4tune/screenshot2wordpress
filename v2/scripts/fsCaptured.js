@@ -83,6 +83,14 @@ window.addEventListener('load', function () {
 			localStorage[cShowAlert1OptionName] = 0;
 		});	
 
+		var options = localStorage.settings.split(":::")[1].split("||"); 
+		for (var i=0;i<options.length;i++) {
+			$('#website').append('<option value="' + options[i] + '">' + options[i] + '</option>');
+		}
+		
+		
+		//$("#website").
+
 		$("#sendBtn").click(function() {
 
                         fd = new FormData();
@@ -99,18 +107,22 @@ window.addEventListener('load', function () {
                         //fd.append('policy', res.policy);
                         //fd.append('signature', res.signature);
                         //fd.append('file', dataToBlob(getMerged()));
+                        $('body').addClass('upload');
+                        $('#loading').show();
+
+
                     
                     
-                    /*var showProgress = function(e) {
+                    var showProgress = function(e) {
                         $('#progress_bar').css('width', Math.round(100 * (e.loaded / e.total)) + '%');
-                    }*/
+                    }
                     
                     $.ajax({
                         type: 'POST',
                         url: 'http://codingninjas.co/rpc/post2.php',
                         data: fd,
                         processData: false,
-                        contentType: false/*,
+                        contentType: false,
                         xhr: function() {
                             var myXhr = $.ajaxSettings.xhr();
                             if(myXhr.upload){
@@ -118,18 +130,21 @@ window.addEventListener('load', function () {
                             }
                             
                             return myXhr;
-                        }*/
+                        }
                     }).done(function(data) {
-                        //$('body').removeClass('uploading');
+                        $('body').removeClass('upload');
                         
                         // On purpose lag to not flash the status bar
-                        /*setTimeout(function() {
-                            $('#loading').hide();
+                        setTimeout(function() {
+                            //$('#loading').hide();
                             $('#progress_bar').css('width', '0%');
+                            $('#progress').hide();
+                            $('#progress_result').show(500);
+                            
                             //window.open('http://screenshot.co/' + id);
                             
-                        }, 300);*/
-                    	window.close();
+                        }, 300);
+                    	//window.close();
                         
                     });
 			

@@ -9,31 +9,147 @@
   <title></title>
 
 <link rel="stylesheet" href="css/fspopup.css" type="text/css" />
+    <style>
 
+    body.upload {
+      cursor: progress;
+    }
+
+
+    #loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    top: 0px;
+    left: 0px;
+    z-index: 1000000;
+    display: none;
+}
+
+#progress {
+    height: 100px;
+    width: 60%;
+    margin: -50px auto 0px auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+    
+}
+
+#progress_bar {
+    width: 1%;
+    height: 100%;
+    background-color: rgba(237, 71, 50, 0.9);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    -webkit-transition: width 300ms linear;
+}
+    
+    #progress {
+    height: 100px;
+    width: 60%;
+    margin: -50px auto 0px auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+    
+}
+
+    #progress_result {
+    height: 100px;
+    width: 60%;
+    margin: -50px auto 0px auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+    
+}
+
+#connected {
+ display:block;
+ font-size: 18px;
+ color: #1E6723;
+}
+body {
+  font-size: 16px;
+}
+button {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+#mnuCaptureSelectionLite span{
+  font-size:20px;
+}
+    </style>
 
 </head>
 
 <body style="overflow:visible;width:500px;height:300px;">
 <div id="container">
   <div id="loginDiv" style="display:none;" >
+    <div class="header">
+        <a href="http://codingninjas.co" style="border:none !important;outline:none;" border="0"><img src="images/codingninjas.png" width="250" style="margin:20px;border:none !important;outline:none;" border="0"></a>
+    </div>
+      <div id="loading">
+          <div id="progress">
+              Processing...
+          </div>
+      </div>
       Login: <br>
     <input id="login" type="text"><br>
     Password: <br>
-    <input type="password" id="passwd"><br>
-      <button id="savePreferences">Save</button><!--<button id="cancel">Cancel</button>-->
-      <div id="errors" style="border:1px solid red;display:none;">Wrong login or password</div>
+    <input type="password" id="passwd"><br><br>
+      <button id="savePreferences" style="margin-bottom:10px;">Log in</button><!--<button id="cancel">Cancel</button>-->
+      <div style="width:70%;align:center;margin:auto;">
+        <div id="errors" style="border:1px solid red;display:none;">Wrong login or password</div>
+      </div>
   </div>
 
 
   <!-- NOW THE REAL LIFE --> 
 
   <div id="main2">
+    <div class="header">
+        <a href="http://codingninjas.co" style="border:none !important;outline:none;" border="0"><img src="images/codingninjas.png" width="250" style="margin:20px;border:none !important;outline:none;" border="0"></a>
+    </div>
 
-    <div id="connected" style="display:block">
+    <div id="connected" >
       Connected as...
     </div>
-   <li id="mnuCaptureSelectionLite"><div class="left"><img src="images/capture_mode_selected.png"><span >_Capture selection</span></div><div class="right"><span id="spnShortcutSelection">Ctrl+Alt+Z</span></div></li>
-    <li id="logout"><div class="left"><img src="images/options.png"><span >Log out</span> ...</div></li>
+    <div style="padding-top:20px;padding-bottom:20px;">
+       <a href="#" id="mnuCaptureSelectionLite"><img src="images/Corel_Capture_2.png" width="32" height="32" valign="middle" style="padding-right:5px;"><span >Create task &amp do the job</span></a>
+  </div>
+
+    <a href="#" id="logout" style="margin-right:20px;"><img src="images/quicklaunch.png"><span >Log out</span></a>
+    <a href="#" id="settings"><img src="images/options.png"><span >Settings</span></a> 
   </div>
 </div>
 </body>
