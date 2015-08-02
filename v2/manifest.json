@@ -16,7 +16,7 @@
        "scripts/fsSSS.js",
        "scripts/fsNativeAPISupport.js",
        "scripts/3p/base64.js",
-       "scripts/fsPopup.js"
+       "scripts/3p/jquery-2.1.1.min.js"
   ]},
 
   "content_scripts": [ {

@@ -52,6 +52,7 @@ function displayAnnouncements()
 {
 	
 	//chrome.browserAction.setBadgeText({text: "New!"});
+	return;
 	
 	
 	var addonString = "&app=ch";
@@ -94,11 +95,11 @@ function nativeHostUpdated(newVersion)
 {
 	logToConsole("Native module has updated to the " + newVersion + " version.");
 	
-	gaTrack('UA-1025658-9', 'CodeNinjas.com', "NativeHostUpdated"); 
+	//gaTrack('UA-1025658-9', 'CodeNinjas.com', "NativeHostUpdated"); 
 	
 	if (newVersion == extVersion)
 	{
-		showBadge("http://getCodeNinjas.com/updated.php?app=" + (isOpera() ? "op" : "ch") + "&ver=" + newVersion);
+		//showBadge("http://getCodeNinjas.com/updated.php?app=" + (isOpera() ? "op" : "ch") + "&ver=" + newVersion);
 	}
 }
 
@@ -120,7 +121,7 @@ function pluginEvent(obj)
 			pluginCommand("setAddonVersion", {version:extVersion, browser: isOpera() ? "Opera" : "Chromium"});
 		else
 		{
-			gaTrack('UA-1025658-9', 'CodeNinjas.com', "NativeError-" + obj.data); 
+			//gaTrack('UA-1025658-9', 'CodeNinjas.com', "NativeError-" + obj.data); 
 			alert("CodeNinjas failed to update. The updater reported the following error: \r\n-----------------------------------------------\r\n" + obj.data + "\r\n-----------------------------------------------\r\n\r\nCodeNinjas will have to work in Lite mode.");
 			logToConsole("Error from native module: " + obj.data);
 		}
@@ -162,7 +163,7 @@ function pluginEvent(obj)
 	} 
 	else if (topic == "saveCrashData")
 	{
-		gaTrack('UA-1025658-9', 'CodeNinjas.com', "AV-" + encodeURIComponent(data)); 
+		//gaTrack('UA-1025658-9', 'CodeNinjas.com', "AV-" + encodeURIComponent(data)); 
 	}
 }
 
@@ -304,8 +305,8 @@ function checkBadgeAction()
 {
 	if (localStorage[cQueuedBadgeURLPref] && localStorage[cQueuedBadgeURLPref] != "undefined")
 	{
-		openURL(localStorage[cQueuedBadgeURLPref]);
-		showBadge(undefined);
+		//openURL(localStorage[cQueuedBadgeURLPref]);
+		//showBadge(undefined);
 		localStorage[cFirstTimeRun] = false;
 		localStorage[cCurrentVersion] = extVersion;
 		return true;
@@ -435,6 +436,7 @@ function getActionLocaleId(action)
 
 function getLADescription()
 {
+	return "";
 	var action1, action2 = getActionLocaleId(lastAction);
 	var fLite = !isNativeSupported();
 	switch (lastMode)
@@ -609,6 +611,7 @@ function genericOnClick(info, tab)
 
 function updateLastAction()
 {
+	return;
 	chrome.contextMenus.update(mnuLastAction, {title: getLADescription() + "    " + getOption(cShortcutPref, cDefaultShortcut)});
 	chrome.contextMenus.update(mnuEntireEdit, {title: chrome.i18n.getMessage("action_capture_entire_lite") + "...    " + getOption(cShortcutPrefEntire, cDefaultShortcutEntire)});
 	chrome.contextMenus.update(mnuVisibleEdit, {title: chrome.i18n.getMessage("action_capture_visible_lite") + "...    " + getOption(cShortcutPrefVisible, cDefaultShortcutVisible)});
@@ -766,6 +769,7 @@ function restoreBadge() {
 }
 
 function initAnalytics() {
+	return;
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', 'UA-1025658-9']);
 	_gaq.push(['_setDomainName', 'CodeNinjas.com']);
