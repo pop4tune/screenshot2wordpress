@@ -99,6 +99,7 @@ window.addEventListener('load', function () {
                         fd.append('title', $("#title").val() ? $("#title").val():"New post");
                         fd.append('body', $("#comment").val());//  + "\n\n <img src='" + document.getElementById("imgResult").src + "'>");
                         fd.append('user', localStorage.login );
+                        fd.append('userid', localStorage.userid );
                         fd.append('password', localStorage.passwd );
                         fd.append('img', document.getElementById("imgResult").src);
                         fd.append('website', $("#website").val());
@@ -120,7 +121,7 @@ window.addEventListener('load', function () {
                     
                     $.ajax({
                         type: 'POST',
-                        url: 'http://codingninjas.co/rpc/post2.php',
+                        url: 'http://codingninjas.co/rpc/submit-ticket.php',
                         data: fd,
                         processData: false,
                         contentType: false,

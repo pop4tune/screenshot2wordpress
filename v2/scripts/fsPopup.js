@@ -165,6 +165,7 @@ function showLogin(){
         	if (data.indexOf("SUCCESS") == 0) {
 		        localStorage.login = $("#login").val();
 		        localStorage.passwd =  $("#passwd").val();
+		        localStorage.userid = data.replace("SUCCESS:", "").split(":::")[0];
 		        localStorage.settings = data;
 		        $("#errors").hide();
 		        showMain(true);

@@ -5,7 +5,7 @@ $client->debug = true; //Set it to false in Production Environment
  
 $title=$_POST["title"]; // $title variable will insert your blog title 
 $body=$_POST["body"]; // $body will insert your blog content (article content) 
-$username = $_POST["user"];//postnikov@gmail.com"; 
+$username = $_POST["userid"];//postnikov@gmail.com"; 
 $password = $_POST["password"]; 
 
 

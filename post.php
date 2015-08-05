@@ -148,7 +148,7 @@ if($pages == false){
 	if ($result->num_rows > 0) {
 	    // output data of each row
 	    while($row = $result->fetch_assoc()) {
-	        $options = $options . $row["name"] . "||";
+	        $options = $options . $row["slug"] . "||";
 	    }
 	} else {
 	    echo "no taxonomies";
