@@ -9,6 +9,7 @@ var commPortName;
 
 function enableSomeElements(enable)
 {
+	return;
 	if (typeof enable === "undefined") 
 		enable = true;
 	
@@ -37,7 +38,6 @@ function enableSomeElements(enable)
 		elem.style.setProperty("display", enable ? "" : "none", "important");
 	}
 }
-/*
 function disableFixedPositions() 
 {
 	return;
@@ -68,10 +68,10 @@ function enableFixedPositions()
 	
 	enableSomeElements();
 }
-*/
 
 function hideStubbornElements()
 {
+	return;
 	function elementExists(elem) 
 	{
 		for (var i = 0; i < stubbornNodes.length; ++i)
@@ -98,6 +98,7 @@ function hideStubbornElements()
 
 function showStubbornElements()
 {
+	return;
 	for (var i = 0; i < stubbornNodes.length; ++i)
 		stubbornNodes[i].elem.style.setProperty("opacity", stubbornNodes[i].opacity);
 		
@@ -200,6 +201,7 @@ function findScrolledElement(docWidth, docHeight) {
 
 function disableFloatingInView(parent)
 {
+	return;
 	function getElementExtents(element)
 	{
 		var rects = element.getClientRects(), extents = {absoluteX: 0, absoluteY: 0, x: 0, y: 0, w: 0, h: 0};
@@ -258,6 +260,7 @@ function disableFloatingInView(parent)
 
 function enableFloatingInView()
 {
+	return;
 	for (var i = 0; i < this.modifiedNodes2.length; i++)
 	{
 		modifiedNodes2[i].object.style.display = modifiedNodes2[i].display;
@@ -338,7 +341,7 @@ chrome.extension.onConnect.addListener(function(port)
 				
 				if (mode != cModeVisible && mode != cModeBrowser)
 					enableSomeElements(false);
-				//	disableFixedPositions();
+					disableFixedPositions();
 					
 				if (divElement)
 				{
@@ -531,7 +534,7 @@ chrome.extension.onConnect.addListener(function(port)
 
 				if (mode != cModeVisible && mode != cModeBrowser)
 					enableSomeElements(true);
-					//	enableFixedPositions();
+						enableFixedPositions();
 					
 				showStubbornElements();
 				
