@@ -86,7 +86,7 @@ var fsNativePlugin = {
 				if (++this.updateTrials > 7) 
 				{
 					logToConsole("Too much of unsuccessful update trials. No updates anymore.");
-					gaTrack('UA-1025658-9', 'CodeNinjas.com', "NativeError-Too much of unsuccessful update trials. No updates anymore"); 
+					//gaTrack('UA-1025658-9', 'CodeNinjas.com', "NativeError-Too much of unsuccessful update trials. No updates anymore"); 
 					this.updating = false;
 					return false;
 				}

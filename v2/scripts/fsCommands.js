@@ -12,12 +12,10 @@ function openExtensionPreferences()
 
 function doRegister()
 {
-	openURL("http://getCodeNinjas.com/buy.php");
 }
 
 function openDemoPage()
 {
-	openURL("http://getCodeNinjas.com/demo.php");
 }
 
 function openSupportPage()
@@ -27,13 +25,8 @@ function openSupportPage()
 
 function openAPIPage()
 {
-	openURL("http://getCodeNinjas.com/api.php");
 }
 
-function openUnibluePromo()
-{
-	openURL("http://screenshot-program.com/registry-checker-lnk5.php");
-}
 
 function resumeEditing()
 {
@@ -57,14 +50,14 @@ function openCaptureSettings()
 function doUpgrade()
 {
 	lockItems();
-	pluginCommand("upgradeToPro");
+	//pluginCommand("upgradeToPro");
 	unlockItems();	
 }
 
 function enterLicense()
 {
 	lockItems();
-	pluginCommand("enterLicense");
+	//pluginCommand("enterLicense");
 	unlockItems();	
 }
 
@@ -84,13 +77,13 @@ function openClipboard()
 
 function notSupported()
 {
-	openURL("http://getCodeNinjas.com/not-supported.php");
+	//openURL("http://getCodeNinjas.com/not-supported.php");
 }
 
 function showLicenseInfo()
 {
 	lockItems();
-	pluginCommand("showLicensingInfo");
+	//pluginCommand("showLicensingInfo");
 	unlockItems();
 }
 

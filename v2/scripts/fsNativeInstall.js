@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	{
 		if (extension.fsNativePlugin.ready)
 		{
-			gaTrack('UA-1025658-9', 'CodeNinjas.com', "NativeHostInstalled"); 
+			//gaTrack('UA-1025658-9', 'CodeNinjas.com', "NativeHostInstalled"); 
 			document.location.href = extension.getInstalledPageURL();
 		}
 		else

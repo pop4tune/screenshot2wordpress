@@ -2,83 +2,18 @@ window.addEventListener('load', function () {
 	
 	var backgroundPage = null;
 	const cShowAlert1OptionName = "showAlert1";
-	
-	function setupAccessibility()
-	{
-		if (isWindows())
-			$("#divPromo,#upgradeLink").removeClass("hiddenInitially");
-			
-		if (navigator.mimeTypes ["application/x-shockwave-flash"] === undefined) {
-			$("#divFlashSave").hide();
-			$("#divFlashSavePDF").hide();	
-		}
-	}
-	
-	/***************************************************************************************/
-	
-	function addSaveButton()
-	{
-		var flashVars = {
-				data: backgroundPage.capResultDataURL.replace(/^data:image\/(png|jpeg);base64,/, "").replace(/\+/g, "%2b"),
-				dataType: "base64",
-				filename: backgroundPage.capResultFileNameLite + "." + getOption(cDefaultImageFormatPref, "png")
-			}, 
-			params = {
-				allowScriptAccess: "always",
-				wmode: "transparent"
-			};
-			
-		swfobject.embedSWF("media/save.swf", "spnFlashSaveContainer", "120", "30", "10", null, flashVars, params);	
-	}
-	
-	/***************************************************************************************/
-	
-	function addSavePDFButton()
-	{
-		var img = backgroundPage.capResult;
-		var doc = new jsPDF(img.width > img.height ? "l" : "p", "in", [img.height / 96, img.width / 96]);
-		doc.addImage(backgroundPage.capResult.toDataURL("image/jpeg"), 'JPEG', 0, 0, img.width / 96, img.height / 96);
-		
-		var flashVars = {
-				data: doc.output('datauristring').replace(/^data:image\/(png|jpeg);base64,/, "").replace(/\+/g, "%2b"),
-				dataType: "base64",
-				filename: backgroundPage.capResultFileNameLite + ".pdf"
-			}, 
-			params = {
-				allowScriptAccess: "always",
-				wmode: "transparent"
-			};
-		
-		swfobject.embedSWF("media/save.swf", "spnFlashSavePDFContainer", "120", "30", "10", null, flashVars, params);
-	}
-	
-	/***************************************************************************************/
-
 	var iZoom = 1;
 	var context;
 	var canvas;
 	var imgObj;
 
+
 	function initHandlers()
 	{
-		$("#btnPrint").click(function() {
-			var iframe = document.createElement("IFRAME");
-			
-			$(iframe).attr({
-				style: "width:0px;height:0px;",
-				id: "fsTempElement"
-			});
-			
-			document.body.appendChild(iframe);
-			iframe.contentWindow.document.write("<div style='margin:0 auto;text-align:center'><img style='width:100%' src='" + document.getElementById("imgResult").src + "'></div>");
-		
-			iframe.contentWindow.print(); 
-			$("#fsTempElement").remove();
-		});
 
 		$("#zoomIn").click(function() {
 				//var div = document.getElementById("divImgResult");
-				iZoom = iZoom * 1.25;
+				iZoom = iZoom * 1.2;
 				var w = backgroundPage.capResult.width * iZoom;
 				var h = backgroundPage.capResult.height * iZoom;
 	            canvas.attr({width: w, height: h}).css({'background-size': '' +w + 'px ' +	 h + 'px'});
@@ -90,7 +25,7 @@ window.addEventListener('load', function () {
 		});
 		$("#zoomOut").click(function() {
 				//var div = document.getElementById("divImgResult");
-				iZoom = iZoom * 0.75;
+				iZoom = iZoom * 0.8;
 				var w = backgroundPage.capResult.width * iZoom;
 				var h = backgroundPage.capResult.height * iZoom;
 	            canvas.attr({width: w, height: h}).css({'background-size': '' +w + 'px ' +	 h + 'px'});
@@ -103,7 +38,7 @@ window.addEventListener('load', function () {
 				//context.drawImage(backgroundPage.capResult, 0,0, backgroundPage.capResult.width * iZoom, backgroundPage.capResult.height * iZoom)
 		});
 
-		$("#btnPrint").click(function() {
+		/*$("#btnPrint").click(function() {
 			var iframe = document.createElement("IFRAME");
 			
 			$(iframe).attr({
@@ -116,18 +51,14 @@ window.addEventListener('load', function () {
 		
 			iframe.contentWindow.print(); 
 			$("#fsTempElement").remove();
-		});
+		});*/
 
 
 		
-		$("#lnkOptions").click(function() {
+		/*$("#lnkOptions").click(function() {
 			backgroundPage.openExtensionPreferences();
-		});
-		
-		$("#lnkRecommend").click(function() {
-			backgroundPage.openURL("http://getCodeNinjas.com/like.php?browser=" + (isOpera() ? "op" : "ch") + "&ver=" + backgroundPage.extVersion);
-		});
-		
+		});*/
+				
 		$("#btnCloseAlert1").click(function() {
 			localStorage[cShowAlert1OptionName] = 0;
 		});	
@@ -155,8 +86,8 @@ window.addEventListener('load', function () {
 			                return mergeCanvas.toDataURL("image/png");
 			            }
                         fd = new FormData();
-                        localStorage.login =  'postnikov@gmail.com';
-                        localStorage.passwd =  '11111111';
+                        //localStorage.login =  'postnikov@gmail.com';
+                        //localStorage.passwd =  '11111111';
                         fd.append('title', $("#title").val() ? $("#title").val():"New post");
                         fd.append('body', $("#comment").val());//  + "\n\n <img src='" + document.getElementById("imgResult").src + "'>");
                         fd.append('user', localStorage.login );
@@ -233,6 +164,21 @@ window.addEventListener('load', function () {
             context = canvas[0].getContext('2d'),
             imgObj = new Image();
 
+    		var img = backgroundPage.capResult;
+			var div = document.getElementById("divImgResult");
+
+			// pre-calculate zoom
+			if (img.width > $("#divImgResult").width()) {
+				iZoom = 0.999999 * $("#divImgResult").width() / img.width;
+			}
+			if (img.height > $("#divImgResult").height()) {
+				var zoom2 = 0.999999 *  $("#divImgResult").height() / img.height;
+				if (iZoom > zoom2) iZoom = zoom2;
+			}
+			//console.log(iZoom);
+
+
+
 		//canvas = $("#imgSketch")[0];
 
         imgObj.onload = function() {
@@ -242,7 +188,11 @@ window.addEventListener('load', function () {
 	        //context.drawImage(this, 0, 0);
 	        $("#imgSketch").css({"background-url": backgroundPage.capResultDataURL});
 	        //$('#imgSketch').sketch({defaultColor: "#ff0"});*/
-            canvas.attr({width: this.width, height: this.height}).css({backgroundImage: "url(" + backgroundPage.capResultDataURL + ")", backgroundRepeat:'none'});
+			var w = backgroundPage.capResult.width * iZoom;
+			var h = backgroundPage.capResult.height * iZoom;
+            canvas.css({backgroundImage: "url(" + backgroundPage.capResultDataURL + ")", backgroundRepeat:'none'});
+            canvas.attr({width: w, height: h}).css({'background-size': '' +w + 'px ' +	 h + 'px'});
+
 	        canvas.appendTo(document.getElementById("divImgResult"));
 	        canvas.sketch({defaultColor: "#ff0000"});
         };
@@ -252,22 +202,6 @@ window.addEventListener('load', function () {
 
 		document.title = backgroundPage.capResultFileNameLite;//backgroundPage.tabTitle + " (" + backgroundPage.tabURL + ")";
 		return;
-		var img = backgroundPage.capResult;
-		var div = document.getElementById("divImgResult");
-		if (img.width < $("#divImgResult").width())
-		{
-			$("#imgResult").css("width", "auto");
-			$("#divImgResult").css("overflow-y", "hidden");
-			div.style.zoom = 1.0000001;
-			setTimeout(function(){div.style.zoom = 1;},50);
-		}
-		
-		else if (div.clientHeight >= div.scrollHeight)
-		{
-			$("#divImgResult").css("overflow-y", "hidden");
-			div.style.zoom = 1.0000001;
-			setTimeout(function(){div.style.zoom = 1;},50);
-		}
 	}
 	
 	/***************************************************************************************/
@@ -290,20 +224,15 @@ window.addEventListener('load', function () {
 	
 	function init()
 	{
-	
-		try {
-			i18nPrepare();
-		} 
-		catch (e) {logError(e.message);}
-		
+			
 		chrome.runtime.getBackgroundPage(function (bp) {
 			if (!bp) return;
 			
 			backgroundPage = bp;
 			
-			addSaveButton();
-			addSavePDFButton();
-			setupAccessibility();
+			//addSaveButton();
+			//addSavePDFButton();
+			//setupAccessibility();
 			initHandlers();
 			
 			showPage();
