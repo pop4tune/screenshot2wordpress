@@ -41,7 +41,7 @@ function mouseOver(obj, evt)
 
 function load()
 {
-	//console.log("!",$);
+	console.log("!",$);
 	
 	/*var itr = document.createNodeIterator(document.documentElement, NodeFilter.SHOW_ELEMENT, null, false);
 	var currentNode;  
@@ -85,6 +85,7 @@ function load()
 
 function showLogin(){
 	$("#main2").hide();
+	$("#container").removeClass("screenshot");
 	$("#loginDiv").show(500);
 
 	$("#savePreferences").click(function(){
@@ -93,8 +94,6 @@ function showLogin(){
         fd.append('password', $("#passwd").val() );
         $('body').addClass('upload');
         $('#loading').show();
-
-
         $.ajax({
             type: 'POST',
             url: 'http://codingninjas.co/rpc/post.php',
@@ -123,6 +122,7 @@ function showLogin(){
 function showMain(showConnectedOK){
 	$("#loginDiv").hide(500);
 	$("#main2").show(500);
+	$("#container").addClass("screenshot");
 	if (showConnectedOK) {
 		$("#connected").show();
 
