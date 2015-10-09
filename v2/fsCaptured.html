@@ -30,6 +30,11 @@
 		
 		#logo {vertical-align:middle; margin-right: 15px;}
 
+
+	body {
+      width: 100%;
+      height: 100%;
+	}
     body.upload {
       cursor: progress;
     }
@@ -111,98 +116,99 @@
 
 <body>
     <!-- Page Content -->
-    <div class="container screenshot" id="containerCaptured" style="display:none;">
+    <div id="containerCaptured">
+	    <div class="container screenshot" style="display:none;">
 
-        <div id="loading">
-            <div id="progress">
-                <div id="progress_bar"></div>
-                Saving your screenshot...
-            </div>
-            <div id="progress_result">
-                Saved. See it on 
-                <a href="http://codingninjas.co/my-tasks/" style="color:white;text-decoration:underline;">codingninjas.co/my-tasks</a>
-            </div>
-        </div>
+	        <div id="loading">
+	            <div id="progress">
+	                <div id="progress_bar"></div>
+	                Saving your screenshot...
+	            </div>
+	            <div id="progress_result">
+	                Saved. See it on 
+	                <a href="http://codingninjas.co/my-tasks/" style="color:white;text-decoration:underline;">codingninjas.co/my-tasks</a>
+	            </div>
+	        </div>
 
 
-        <!-- Portfolio Item Heading -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header" style="color:white;">
-                <i class="fa fa-code" style="color:white;margin-right:10px;"></i><span >Send task to CodingNinjas</span>
-                </h2>
-            </div>
-        </div>
-        <!-- /.row -->
+	        <!-- Portfolio Item Heading -->
+	        <div class="row">
+	            <div class="col-lg-12">
+	                <h2 class="page-header" style="color:white;">
+	                <i class="fa fa-code" style="color:white;margin-right:10px;"></i><span >Send task to CodingNinjas</span>
+	                </h2>
+	            </div>
+	        </div>
+	        <!-- /.row -->
 
-        <!-- Portfolio Item Row -->
-        <div class="row">
+	        <!-- Portfolio Item Row -->
+	        <div class="row">
 
-            <div class="col-lg-8">
-              <div style="background-color: #485563;color: #ffffff;font-size:30px;padding-left:10px;">
-              <button type="button" id="zoomIn" class="fsButton btn bnt-default btn-sm" style="margin-right:10px;"><span >+ Zoom in</span></button><button type="button" id="zoomOut" class="fsButton btn bnt-default btn-sm"><span>- Zoom out</span></button>
-              <!--<a href="#imgSketch" data-tool="marker" >Marker</a>
-              <a href="#imgSketch" data-tool="eraser">Eraser</a>-->
-              <button href="#imgSketch"  data-tool="marker" type="button" id="startDraw" class="fsButton btn bnt-default btn-sm"><span>* Marker</span></button>
-              <button href="#imgSketch"  data-tool="eraser" type="button" id="startErase" class="fsButton btn bnt-default btn-sm"><span>* Eraser</span></button>
-              </div>
-				        <div id="divImgResult" style="width:750px; height:550px; overflow-y:scroll; overflow-x:scroll;text-align:center" class="panel panel-default">
-                   <!--<canvas id="imgSketch" style="margin:auto"></canvas>
-                	<img id="imgResult" style="padding:10px; width:100%; margin:auto; display:none;">-->
-                </div>
-            </div>
+	            <div class="col-lg-8">
+	              <div class="prtscr-container">
+		              <button type="button" id="zoomIn" class="fsButton btn bnt-default btn-sm" style="margin-right:10px;"><span >+ Zoom in</span></button><button type="button" id="zoomOut" class="fsButton btn bnt-default btn-sm"><span>- Zoom out</span></button>
+		              <!--<a href="#imgSketch" data-tool="marker" >Marker</a>
+		              <a href="#imgSketch" data-tool="eraser">Eraser</a>-->
+		              <button href="#imgSketch"  data-tool="marker" type="button" id="startDraw" class="fsButton btn bnt-default btn-sm"><span>* Marker</span></button>
+		              <button href="#imgSketch"  data-tool="eraser" type="button" id="startErase" class="fsButton btn bnt-default btn-sm"><span>* Eraser</span></button>
+	              </div>
+			       <div id="divImgResult" class="panel panel-default divImgResult">
+	                   <!--<canvas id="imgSketch" style="margin:auto"></canvas>
+	                	<img id="imgResult" style="padding:10px; width:100%; margin:auto; display:none;">-->
+	                </div>
+	            </div>
 
-            <div class="col-lg-4">
-                <div class="panel panel-default">
-                                  <div class="panel-heading"><h3 class="panel-title"><span class="glyphicon glyphicon-file"></span>&nbsp;<span >Send screenshot</span></h3></div>
-                                  <div class="panel-body">
-                    <p>
-                    <div class="row">
-                        <div class="col-md-12">
-                            Subject:
-                            <input type="text" id="title" style="width:100%" placeholder="Subject"><br><br>
-                            Website: 
-                            <select id="website" style="width:100%">
-                                <option value="">Select site</option>
-                            </select><br><br>
-                            Comment:
-                            <textarea  id="comment" style="width:100%;height:150px" placeholder="Comment"></textarea><br><br>
-                            <div class="fsButton"><button type="button" class="fsButton btn btn-default btn-sm active" id="sendBtn" style="font-size:20px;line-height:20px"><span><b>Send</b></span></button></div>
+	            <div class="col-lg-4">
+	                <div class="panel panel-default">
+	                                  <div class="panel-heading"><h3 class="panel-title"><span class="glyphicon glyphicon-file"></span>&nbsp;<span >Send screenshot</span></h3></div>
+	                                  <div class="panel-body">
+	                    <p>
+	                    <div class="row">
+	                        <div class="col-md-12">
+	                            Subject:
+	                            <input type="text" id="title" style="width:100%" placeholder="Subject"><br><br>
+	                            Website: 
+	                            <select id="website" style="width:100%">
+	                                <option value="">Select site</option>
+	                            </select><br><br>
+	                            Comment:
+	                            <textarea  id="comment" style="width:100%;height:150px" placeholder="Comment"></textarea><br><br>
+	                            <div class="fsButton"><button type="button" class="fsButton btn btn-default btn-sm active" id="sendBtn" style="font-size:20px;line-height:20px"><span>Send</span></button></div>
 
-                            <!--<div class="fsButton" style="float:right">
-                                <div class="fsButton" style="position:absolute;top:auto;z-index:1;">
-                                    <button  data-toggle="modal" data-target="#modalSaveToFile" type="button" class="fsButton btn btn-default btn-sm active"><span >Save as Image</span></button>
-                                </div>
-    
-                                <div id="divFlashSave" class="fsButton" style="position:absolute;top:auto;z-index:100;opacity:0;filter:Alpha(Opacity=0);">                					<span id="spnFlashSaveContainer">&nbsp;</span>
-                                </div>
-    
-                            </div>-->
-                        
-                        </div>
-                    </div>
-                    </p>
-                    
+	                            <!--<div class="fsButton" style="float:right">
+	                                <div class="fsButton" style="position:absolute;top:auto;z-index:1;">
+	                                    <button  data-toggle="modal" data-target="#modalSaveToFile" type="button" class="fsButton btn btn-default btn-sm active"><span >Save as Image</span></button>
+	                                </div>
+	    
+	                                <div id="divFlashSave" class="fsButton" style="position:absolute;top:auto;z-index:100;opacity:0;filter:Alpha(Opacity=0);">                					<span id="spnFlashSaveContainer">&nbsp;</span>
+	                                </div>
+	    
+	                            </div>-->
+	                        
+	                        </div>
+	                    </div>
+	                    </p>
+	                    
 
-           		</div>
-			</div>
-<!--
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Save online</h3>
-  </div>
-  <div class="panel-body">
-    
-			
-		div>
-<12div id="divAlert1" class="alert alert-info alert-dismissible" role="alert" style="display:none;">
-  <button id="btnCloseAlert1" type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-  <strong>Ooops!</strong> <span >I was using another version of CodeNinjas</span>. <u><a href="/fsNativeInstall.html" target="_blank"><span >Can I get it back?</span></a></u></div>
+	           		</div>
+				</div>
+	<!--
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+	    <h3 class="panel-title">Save online</h3>
+	  </div>
+	  <div class="panel-body">
+	    
+				
+			div>
+	<12div id="divAlert1" class="alert alert-info alert-dismissible" role="alert" style="display:none;">
+	  <button id="btnCloseAlert1" type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	  <strong>Ooops!</strong> <span >I was using another version of CodeNinjas</span>. <u><a href="/fsNativeInstall.html" target="_blank"><span >Can I get it back?</span></a></u></div>
 
-            </div>
+	            </div>
 
-        </div>
-        <!-- /.row -->
+	        </div>
+	        <!-- /.row -->
 
 
 <!-- Modal Copy to Clipboard howto-->
@@ -316,8 +322,8 @@
 
 
 
-</div>
+	</div>
 <!-- /.container -->
-
+</div>
 </body>
 </html>
